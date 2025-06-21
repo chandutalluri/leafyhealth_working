@@ -10,7 +10,7 @@ interface User {
   email: string;
   firstName: string;
   lastName: string;
-  role: 'global_super_admin' | 'operational_super_admin' | 'admin' | 'manager' | 'staff';
+  role: 'super_admin' | 'admin' | 'manager' | 'staff';
   type: 'internal';
   branchId?: string;
   branchName?: string;
@@ -50,7 +50,7 @@ export const useAuthStore = create<AuthState>()(
         
         try {
           console.log('Attempting login to:', `${AUTH_SERVICE_URL}/internal/login`);
-          console.log('Request payload:', { email });
+          console.log('Request payload:', { email, password: '***' });
           
           const response = await fetch(`${AUTH_SERVICE_URL}/internal/login`, {
             method: 'POST',
@@ -76,7 +76,7 @@ export const useAuthStore = create<AuthState>()(
           if (data.success) {
             // Validate Super Admin role
             const userRole = data.user.role;
-            if (userRole !== 'global_super_admin' && userRole !== 'operational_super_admin') {
+            if (userRole !== 'super_admin') {
               set({
                 error: 'Super Admin privileges required. Access denied.',
                 isLoading: false,

@@ -295,14 +295,17 @@ app.post('/api/auth/internal/login',
     });
   }
   try {
+    console.log('INTERNAL LOGIN REQUEST BODY:', JSON.stringify(req.body, null, 2));
+    console.log('Request headers:', req.headers['content-type']);
     const { email, password } = req.body;
+    console.log('Extracted email:', email, 'password length:', password ? password.length : 'undefined');
 
     // Find internal user
     const result = await pool.query(`
       SELECT u.id, u.email, u.password_hash, u.first_name, u.last_name, u.role,
              u.is_active, u.last_login_at, u.branch_id
       FROM internal_users u
-      WHERE u.email = $1 AND u.is_active = true AND u.role IN ('global_super_admin', 'operational_super_admin', 'admin', 'manager', 'staff')
+      WHERE u.email = $1 AND u.is_active = true AND u.role IN ('super_admin', 'admin', 'manager', 'staff')
     `, [email]);
 
     if (result.rows.length === 0) {
