@@ -1,0 +1,631 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created": "2025-06-05T16:55:15.111Z",
+    "lastUpdated": "2025-06-05T16:55:27.350Z",
+    "totalServices": 22,
+    "portRanges": {
+      "backend": {
+        "start": 3000,
+        "end": 3999,
+        "allocated": []
+      },
+      "frontend": {
+        "start": 5000,
+        "end": 5999,
+        "allocated": []
+      },
+      "gateway": {
+        "start": 8000,
+        "end": 8999,
+        "allocated": []
+      },
+      "admin": {
+        "start": 9000,
+        "end": 9999,
+        "allocated": []
+      }
+    }
+  },
+  "services": {
+    "identity-access": {
+      "id": "9edac3ae-68b7-489a-89b5-b43f3fd51942",
+      "name": "identity-access",
+      "type": "backend",
+      "port": 3010,
+      "status": "running",
+      "functionality": "Authentication and Identity Management",
+      "endpoints": [
+        "/auth"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3010/health",
+      "documentation": "http://localhost:3010/api/docs",
+      "introspection": "http://localhost:3010/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.205Z",
+        "lastModified": "2025-06-05T16:55:27.205Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.209Z",
+      "healthData": {
+        "startedAt": "2025-06-05T16:55:27.208Z",
+        "healthStatus": "healthy"
+      }
+    },
+    "user-role-management": {
+      "id": "211e837e-b730-4ea4-8543-fe89e405471d",
+      "name": "user-role-management",
+      "type": "backend",
+      "port": 3011,
+      "status": "running",
+      "functionality": "User and Role Management",
+      "endpoints": [
+        "/users"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3011/health",
+      "documentation": "http://localhost:3011/api/docs",
+      "introspection": "http://localhost:3011/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.211Z",
+        "lastModified": "2025-06-05T16:55:27.211Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.214Z",
+      "healthData": {
+        "startedAt": "2025-06-05T16:55:27.214Z",
+        "healthStatus": "healthy"
+      }
+    },
+    "catalog-management": {
+      "id": "87ce59e3-ba1b-4227-83ac-56662f2deb50",
+      "name": "catalog-management",
+      "type": "backend",
+      "port": 3020,
+      "status": "running",
+      "functionality": "Product Catalog Management",
+      "endpoints": [
+        "/catalog"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3020/health",
+      "documentation": "http://localhost:3020/api/docs",
+      "introspection": "http://localhost:3020/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.215Z",
+        "lastModified": "2025-06-05T16:55:27.215Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.217Z",
+      "healthData": {
+        "startedAt": "2025-06-05T16:55:27.217Z",
+        "healthStatus": "healthy"
+      }
+    },
+    "inventory-management": {
+      "id": "6fd325e7-5f19-4428-8849-b52be24338d1",
+      "name": "inventory-management",
+      "type": "backend",
+      "port": 3021,
+      "status": "running",
+      "functionality": "Inventory and Stock Management",
+      "endpoints": [
+        "/inventory"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3021/health",
+      "documentation": "http://localhost:3021/api/docs",
+      "introspection": "http://localhost:3021/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.219Z",
+        "lastModified": "2025-06-05T16:55:27.219Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.222Z",
+      "healthData": {
+        "startedAt": "2025-06-05T16:55:27.221Z",
+        "healthStatus": "healthy"
+      }
+    },
+    "order-management": {
+      "id": "4e915efe-5d2c-49fc-93c9-2cc445dcf243",
+      "name": "order-management",
+      "type": "backend",
+      "port": 3022,
+      "status": "running",
+      "functionality": "Order Processing and Management",
+      "endpoints": [
+        "/orders"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3022/health",
+      "documentation": "http://localhost:3022/api/docs",
+      "introspection": "http://localhost:3022/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.224Z",
+        "lastModified": "2025-06-05T16:55:27.224Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.247Z",
+      "healthData": {
+        "startedAt": "2025-06-05T16:55:27.246Z",
+        "healthStatus": "healthy"
+      }
+    },
+    "payment-processing": {
+      "id": "ab1e1f70-0c2c-470c-b462-97e0fb03d41e",
+      "name": "payment-processing",
+      "type": "backend",
+      "port": 3023,
+      "status": "running",
+      "functionality": "Payment Processing and Transactions",
+      "endpoints": [
+        "/payments"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3023/health",
+      "documentation": "http://localhost:3023/api/docs",
+      "introspection": "http://localhost:3023/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.248Z",
+        "lastModified": "2025-06-05T16:55:27.248Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.252Z",
+      "healthData": {
+        "startedAt": "2025-06-05T16:55:27.252Z",
+        "healthStatus": "healthy"
+      }
+    },
+    "notification-service": {
+      "id": "6481dbfb-7051-4345-816b-9c3cbb663ee7",
+      "name": "notification-service",
+      "type": "backend",
+      "port": 3024,
+      "status": "running",
+      "functionality": "Notification and Communication Service",
+      "endpoints": [
+        "/notifications"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3024/health",
+      "documentation": "http://localhost:3024/api/docs",
+      "introspection": "http://localhost:3024/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.254Z",
+        "lastModified": "2025-06-05T16:55:27.254Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.275Z",
+      "healthData": {
+        "startedAt": "2025-06-05T16:55:27.275Z",
+        "healthStatus": "healthy"
+      }
+    },
+    "customer-service": {
+      "id": "49323ac7-d270-4554-a0f3-d20b10b4ed95",
+      "name": "customer-service",
+      "type": "backend",
+      "port": 3031,
+      "status": "running",
+      "functionality": "Customer Service and Support",
+      "endpoints": [
+        "/customers"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3031/health",
+      "documentation": "http://localhost:3031/api/docs",
+      "introspection": "http://localhost:3031/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.276Z",
+        "lastModified": "2025-06-05T16:55:27.276Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.280Z",
+      "healthData": {
+        "startedAt": "2025-06-05T16:55:27.280Z",
+        "healthStatus": "healthy"
+      }
+    },
+    "analytics-reporting": {
+      "id": "260455ae-4e09-440a-9672-240ff86f84fa",
+      "name": "analytics-reporting",
+      "type": "backend",
+      "port": 3025,
+      "status": "registered",
+      "functionality": "Analytics and Reporting",
+      "endpoints": [
+        "/analytics"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3025/health",
+      "documentation": "http://localhost:3025/api/docs",
+      "introspection": "http://localhost:3025/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.281Z",
+        "lastModified": "2025-06-05T16:55:27.281Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.285Z",
+      "healthData": {
+        "registeredAt": "2025-06-05T16:55:27.284Z",
+        "readyForActivation": true
+      }
+    },
+    "shipping-delivery": {
+      "id": "5b9c026e-c5e2-4846-86f1-1043d6568a40",
+      "name": "shipping-delivery",
+      "type": "backend",
+      "port": 3026,
+      "status": "registered",
+      "functionality": "Shipping and Delivery Management",
+      "endpoints": [
+        "/shipping"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3026/health",
+      "documentation": "http://localhost:3026/api/docs",
+      "introspection": "http://localhost:3026/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.286Z",
+        "lastModified": "2025-06-05T16:55:27.286Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.289Z",
+      "healthData": {
+        "registeredAt": "2025-06-05T16:55:27.289Z",
+        "readyForActivation": true
+      }
+    },
+    "compliance-audit": {
+      "id": "1cef551a-3b59-4c0e-ba6d-9e228b92f4f9",
+      "name": "compliance-audit",
+      "type": "backend",
+      "port": 3027,
+      "status": "registered",
+      "functionality": "Compliance and Audit Management",
+      "endpoints": [
+        "/compliance"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3027/health",
+      "documentation": "http://localhost:3027/api/docs",
+      "introspection": "http://localhost:3027/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.290Z",
+        "lastModified": "2025-06-05T16:55:27.290Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.294Z",
+      "healthData": {
+        "registeredAt": "2025-06-05T16:55:27.293Z",
+        "readyForActivation": true
+      }
+    },
+    "accounting-management": {
+      "id": "f67eee18-412b-4f1c-9a5b-6944a1e0c4c6",
+      "name": "accounting-management",
+      "type": "backend",
+      "port": 3028,
+      "status": "registered",
+      "functionality": "Financial and Accounting Operations",
+      "endpoints": [
+        "/accounting"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3028/health",
+      "documentation": "http://localhost:3028/api/docs",
+      "introspection": "http://localhost:3028/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.296Z",
+        "lastModified": "2025-06-05T16:55:27.296Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.300Z",
+      "healthData": {
+        "registeredAt": "2025-06-05T16:55:27.299Z",
+        "readyForActivation": true
+      }
+    },
+    "employee-management": {
+      "id": "14634b46-cee2-490a-9e37-61697b861453",
+      "name": "employee-management",
+      "type": "backend",
+      "port": 3029,
+      "status": "registered",
+      "functionality": "Employee and HR Management",
+      "endpoints": [
+        "/employees"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3029/health",
+      "documentation": "http://localhost:3029/api/docs",
+      "introspection": "http://localhost:3029/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.301Z",
+        "lastModified": "2025-06-05T16:55:27.301Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.303Z",
+      "healthData": {
+        "registeredAt": "2025-06-05T16:55:27.303Z",
+        "readyForActivation": true
+      }
+    },
+    "performance-monitor": {
+      "id": "20412a8a-2f3a-4498-9e14-0b6da1041ab5",
+      "name": "performance-monitor",
+      "type": "backend",
+      "port": 3030,
+      "status": "registered",
+      "functionality": "Performance Monitoring and Metrics",
+      "endpoints": [
+        "/performance"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3030/health",
+      "documentation": "http://localhost:3030/api/docs",
+      "introspection": "http://localhost:3030/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.305Z",
+        "lastModified": "2025-06-05T16:55:27.305Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.307Z",
+      "healthData": {
+        "registeredAt": "2025-06-05T16:55:27.307Z",
+        "readyForActivation": true
+      }
+    },
+    "marketplace-management": {
+      "id": "b432d489-4e09-4862-8df2-1948b928aa0b",
+      "name": "marketplace-management",
+      "type": "backend",
+      "port": 3032,
+      "status": "registered",
+      "functionality": "Marketplace and Vendor Management",
+      "endpoints": [
+        "/marketplace"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3032/health",
+      "documentation": "http://localhost:3032/api/docs",
+      "introspection": "http://localhost:3032/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.308Z",
+        "lastModified": "2025-06-05T16:55:27.308Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.311Z",
+      "healthData": {
+        "registeredAt": "2025-06-05T16:55:27.310Z",
+        "readyForActivation": true
+      }
+    },
+    "integration-hub": {
+      "id": "32831bf6-48f7-4044-a018-f502e771d599",
+      "name": "integration-hub",
+      "type": "backend",
+      "port": 3033,
+      "status": "registered",
+      "functionality": "Third-party Integration Hub",
+      "endpoints": [
+        "/integrations"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3033/health",
+      "documentation": "http://localhost:3033/api/docs",
+      "introspection": "http://localhost:3033/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.312Z",
+        "lastModified": "2025-06-05T16:55:27.312Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.314Z",
+      "healthData": {
+        "registeredAt": "2025-06-05T16:55:27.314Z",
+        "readyForActivation": true
+      }
+    },
+    "expense-monitoring": {
+      "id": "853ab8a3-3136-4255-a05b-ac7df08f68b7",
+      "name": "expense-monitoring",
+      "type": "backend",
+      "port": 3034,
+      "status": "registered",
+      "functionality": "Expense Monitoring and Management",
+      "endpoints": [
+        "/expenses"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3034/health",
+      "documentation": "http://localhost:3034/api/docs",
+      "introspection": "http://localhost:3034/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.317Z",
+        "lastModified": "2025-06-05T16:55:27.317Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.321Z",
+      "healthData": {
+        "registeredAt": "2025-06-05T16:55:27.321Z",
+        "readyForActivation": true
+      }
+    },
+    "label-design": {
+      "id": "757dda04-65e6-499b-9820-fc7314cb8953",
+      "name": "label-design",
+      "type": "backend",
+      "port": 3035,
+      "status": "registered",
+      "functionality": "Product Labeling and Design",
+      "endpoints": [
+        "/labels"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3035/health",
+      "documentation": "http://localhost:3035/api/docs",
+      "introspection": "http://localhost:3035/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.322Z",
+        "lastModified": "2025-06-05T16:55:27.322Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.325Z",
+      "healthData": {
+        "registeredAt": "2025-06-05T16:55:27.324Z",
+        "readyForActivation": true
+      }
+    },
+    "content-management": {
+      "id": "01ccc542-4da5-4c36-ba36-db28321a4c44",
+      "name": "content-management",
+      "type": "backend",
+      "port": 3036,
+      "status": "registered",
+      "functionality": "Content Management System",
+      "endpoints": [
+        "/content"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:3036/health",
+      "documentation": "http://localhost:3036/api/docs",
+      "introspection": "http://localhost:3036/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.326Z",
+        "lastModified": "2025-06-05T16:55:27.326Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.328Z",
+      "healthData": {
+        "registeredAt": "2025-06-05T16:55:27.328Z",
+        "readyForActivation": true
+      }
+    },
+    "leafyhealth-platform": {
+      "id": "7722b553-f110-4273-9e3d-5063fab574a5",
+      "name": "leafyhealth-platform",
+      "type": "frontend",
+      "port": 5001,
+      "status": "registered",
+      "functionality": "Customer Platform Interface",
+      "endpoints": [
+        "/"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:5001/health",
+      "documentation": "http://localhost:5001/api/docs",
+      "introspection": "http://localhost:5001/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.333Z",
+        "lastModified": "2025-06-05T16:55:27.333Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.337Z",
+      "healthData": {
+        "registeredAt": "2025-06-05T16:55:27.337Z",
+        "readyForActivation": true
+      }
+    },
+    "api-gateway": {
+      "id": "6864f50b-d5bc-4a5d-93a3-f705712bf6bb",
+      "name": "api-gateway",
+      "type": "gateway",
+      "port": 8080,
+      "status": "running",
+      "functionality": "API Gateway and Request Routing",
+      "endpoints": [
+        "/api"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:8080/health",
+      "documentation": "http://localhost:8080/api/docs",
+      "introspection": "http://localhost:8080/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.342Z",
+        "lastModified": "2025-06-05T16:55:27.342Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.344Z",
+      "healthData": {
+        "startedAt": "2025-06-05T16:55:27.344Z",
+        "healthStatus": "healthy"
+      }
+    },
+    "control-dashboard": {
+      "id": "d4f247e2-91b1-42f4-aeef-08cc26139d16",
+      "name": "control-dashboard",
+      "type": "admin",
+      "port": 9000,
+      "status": "running",
+      "functionality": "Administrative Control Dashboard",
+      "endpoints": [
+        "/admin"
+      ],
+      "dependencies": [],
+      "healthCheck": "http://localhost:9000/health",
+      "documentation": "http://localhost:9000/api/docs",
+      "introspection": "http://localhost:9000/__introspect",
+      "metadata": {
+        "version": "1.0.0",
+        "created": "2025-06-05T16:55:27.345Z",
+        "lastModified": "2025-06-05T16:55:27.345Z",
+        "owner": "system",
+        "deletionProtected": true
+      },
+      "lastHealthCheck": "2025-06-05T16:55:27.350Z",
+      "healthData": {
+        "startedAt": "2025-06-05T16:55:27.349Z",
+        "healthStatus": "healthy"
+      }
+    }
+  },
+  "deletionProtection": {
+    "enabled": true,
+    "requiresSuperAdmin": true,
+    "superAdminKeyHash": "42986e7e2931963952f6d12252651cdfc46636435d3659b3478fdf5d1f206ecd"
+  }
+}

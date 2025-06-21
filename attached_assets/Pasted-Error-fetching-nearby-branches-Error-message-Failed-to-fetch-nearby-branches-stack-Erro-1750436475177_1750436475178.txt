@@ -1,0 +1,31 @@
+Error fetching nearby branches: 
+Error {}
+message: "Failed to fetch nearby branches"
+stack: "Error: Failed to fetch nearby branches↵ at Object.fetchNearbyBranches (webpack-internal:///(pages-dir-browser)/./src/lib/stores/useBranchStore.ts:121:41)↵ at async detectLocation (webpack-internal:///(pages-dir-browser)/./src/lib/stores/useBranchStore.ts:54:40)↵ at async App.useEffect.initializeApp (webpack-internal:///(pages-dir-browser)/./src/pages/_app.tsx:92:29)"
+get stack: ƒ ()
+set stack: ƒ ()
+[[Prototype]]: Object
+
+Error fetching branches: 
+Error {}
+message: "Failed to fetch branches"
+stack: "Error: Failed to fetch branches↵ at Object.fetchBranches (webpack-internal:///(pages-dir-browser)/./src/lib/stores/useBranchStore.ts:74:41)↵ at async Object.fetchNearbyBranches (webpack-internal:///(pages-dir-browser)/./src/lib/stores/useBranchStore.ts:131:17)↵ at async detectLocation (webpack-internal:///(pages-dir-browser)/./src/lib/stores/useBranchStore.ts:54:40)↵ at async App.useEffect.initializeApp (webpack-internal:///(pages-dir-browser)/./src/pages/_app.tsx:92:29)"
+get stack: ƒ ()
+set stack: ƒ ()
+[[Prototype]]: Object
+
+Error fetching nearby branches: 
+Error {}
+message: "Failed to fetch nearby branches"
+stack: "Error: Failed to fetch nearby branches↵ at Object.fetchNearbyBranches (webpack-internal:///(pages-dir-browser)/./src/lib/stores/useBranchStore.ts:121:41)↵ at async detectLocation (webpack-internal:///(pages-dir-browser)/./src/lib/stores/useBranchStore.ts:54:40)↵ at async App.useEffect.initializeApp (webpack-internal:///(pages-dir-browser)/./src/pages/_app.tsx:92:29)"
+get stack: ƒ ()
+set stack: ƒ ()
+[[Prototype]]: Object
+
+Error fetching branches: 
+Error {}
+message: "Failed to fetch branches"
+stack: "Error: Failed to fetch branches↵ at Object.fetchBranches (webpack-internal:///(pages-dir-browser)/./src/lib/stores/useBranchStore.ts:74:41)↵ at async Object.fetchNearbyBranches (webpack-internal:///(pages-dir-browser)/./src/lib/stores/useBranchStore.ts:131:17)↵ at async detectLocation (webpack-internal:///(pages-dir-browser)/./src/lib/stores/useBranchStore.ts:54:40)↵ at async App.useEffect.initializeApp (webpack-internal:///(pages-dir-browser)/./src/pages/_app.tsx:92:29)"
+get stack: ƒ ()
+set stack: ƒ ()
+[[Prototype]]: Object

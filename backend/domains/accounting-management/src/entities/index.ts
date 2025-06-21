@@ -1,0 +1,1 @@
+export { Transaction, Expense } from './accounting-management.entity';

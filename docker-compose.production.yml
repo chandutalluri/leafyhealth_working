@@ -1,0 +1,471 @@
+version: '3.8'
+
+services:
+  # Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: leafyhealth-postgres
+    environment:
+      POSTGRES_DB: leafyhealth
+      POSTGRES_USER: leafyhealth
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database_init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U leafyhealth"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Reverse Proxy & Load Balancer
+  traefik:
+    image: traefik:v3.0
+    container_name: leafyhealth-traefik
+    command:
+      - "--api.dashboard=true"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--certificatesresolvers.myresolver.acme.tlschallenge=true"
+      - "--certificatesresolvers.myresolver.acme.email=${ACME_EMAIL}"
+      - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - letsencrypt:/letsencrypt
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+
+  # Authentication Gateway
+  auth-gateway:
+    build:
+      context: .
+      dockerfile: server/Dockerfile.auth-gateway
+    container_name: leafyhealth-auth-gateway
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.auth.rule=Host(`${DOMAIN}`) && PathPrefix(`/api/auth`)"
+      - "traefik.http.services.auth.loadbalancer.server.port=8084"
+      - "traefik.http.routers.auth.entrypoints=websecure"
+      - "traefik.http.routers.auth.tls.certresolver=myresolver"
+
+  # Permission Gateway
+  permission-gateway:
+    build:
+      context: .
+      dockerfile: server/Dockerfile.permission-gateway
+    container_name: leafyhealth-permission-gateway
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+
+  # Company Management Service
+  company-management:
+    build:
+      context: .
+      dockerfile: backend/domains/company-management/Dockerfile
+    container_name: leafyhealth-company-management
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.company.rule=Host(`${DOMAIN}`) && PathPrefix(`/api/company-management`)"
+      - "traefik.http.services.company.loadbalancer.server.port=3013"
+      - "traefik.http.routers.company.entrypoints=websecure"
+      - "traefik.http.routers.company.tls.certresolver=myresolver"
+
+  # Order Management Service
+  order-management:
+    build:
+      context: .
+      dockerfile: backend/domains/order-management/Dockerfile
+    container_name: leafyhealth-order-management
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.orders.rule=Host(`${DOMAIN}`) && PathPrefix(`/api/order-management`)"
+      - "traefik.http.services.orders.loadbalancer.server.port=3030"
+      - "traefik.http.routers.orders.entrypoints=websecure"
+      - "traefik.http.routers.orders.tls.certresolver=myresolver"
+
+  # Payment Processing Service
+  payment-processing:
+    build:
+      context: .
+      dockerfile: backend/domains/payment-processing/Dockerfile
+    container_name: leafyhealth-payment-processing
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+      - RAZORPAY_KEY_ID=${RAZORPAY_KEY_ID}
+      - RAZORPAY_KEY_SECRET=${RAZORPAY_KEY_SECRET}
+      - HDFC_GATEWAY_URL=${HDFC_GATEWAY_URL}
+      - HDFC_MERCHANT_ID=${HDFC_MERCHANT_ID}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.payments.rule=Host(`${DOMAIN}`) && PathPrefix(`/api/payment-processing`)"
+      - "traefik.http.services.payments.loadbalancer.server.port=3031"
+      - "traefik.http.routers.payments.entrypoints=websecure"
+      - "traefik.http.routers.payments.tls.certresolver=myresolver"
+
+  # Inventory Management Service
+  inventory-management:
+    build:
+      context: .
+      dockerfile: backend/domains/inventory-management/Dockerfile
+    container_name: leafyhealth-inventory-management
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.inventory.rule=Host(`${DOMAIN}`) && PathPrefix(`/api/inventory-management`)"
+      - "traefik.http.services.inventory.loadbalancer.server.port=3032"
+      - "traefik.http.routers.inventory.entrypoints=websecure"
+      - "traefik.http.routers.inventory.tls.certresolver=myresolver"
+
+  # Analytics Reporting Service
+  analytics-reporting:
+    build:
+      context: .
+      dockerfile: backend/domains/analytics-reporting/Dockerfile
+    container_name: leafyhealth-analytics-reporting
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.analytics.rule=Host(`${DOMAIN}`) && PathPrefix(`/api/analytics-reporting`)"
+      - "traefik.http.services.analytics.loadbalancer.server.port=3034"
+      - "traefik.http.routers.analytics.entrypoints=websecure"
+      - "traefik.http.routers.analytics.tls.certresolver=myresolver"
+
+  # Shipping Delivery Service
+  shipping-delivery:
+    build:
+      context: .
+      dockerfile: backend/domains/shipping-delivery/Dockerfile
+    container_name: leafyhealth-shipping-delivery
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+      - GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.shipping.rule=Host(`${DOMAIN}`) && PathPrefix(`/api/shipping-delivery`)"
+      - "traefik.http.services.shipping.loadbalancer.server.port=3036"
+      - "traefik.http.routers.shipping.entrypoints=websecure"
+      - "traefik.http.routers.shipping.tls.certresolver=myresolver"
+
+  # Catalog Management Service
+  catalog-management:
+    build:
+      context: .
+      dockerfile: backend/domains/catalog-management/Dockerfile
+    container_name: leafyhealth-catalog-management
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.catalog.rule=Host(`${DOMAIN}`) && PathPrefix(`/api/catalog-management`)"
+      - "traefik.http.services.catalog.loadbalancer.server.port=3037"
+      - "traefik.http.routers.catalog.entrypoints=websecure"
+      - "traefik.http.routers.catalog.tls.certresolver=myresolver"
+
+  # Employee Management Service
+  employee-management:
+    build:
+      context: .
+      dockerfile: backend/domains/employee-management/Dockerfile
+    container_name: leafyhealth-employee-management
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.employee.rule=Host(`${DOMAIN}`) && PathPrefix(`/api/employee-management`)"
+      - "traefik.http.services.employee.loadbalancer.server.port=3020"
+      - "traefik.http.routers.employee.entrypoints=websecure"
+      - "traefik.http.routers.employee.tls.certresolver=myresolver"
+
+  # User Role Management Service
+  user-role-management:
+    build:
+      context: .
+      dockerfile: backend/domains/user-role-management/Dockerfile
+    container_name: leafyhealth-user-role-management
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.users.rule=Host(`${DOMAIN}`) && PathPrefix(`/api/user-role-management`)"
+      - "traefik.http.services.users.loadbalancer.server.port=3035"
+      - "traefik.http.routers.users.entrypoints=websecure"
+      - "traefik.http.routers.users.tls.certresolver=myresolver"
+
+  # Image Management Service
+  image-management:
+    build:
+      context: .
+      dockerfile: backend/domains/image-management/Dockerfile
+    container_name: leafyhealth-image-management
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+    volumes:
+      - image_uploads:/app/uploads
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.images.rule=Host(`${DOMAIN}`) && PathPrefix(`/api/image-management`)"
+      - "traefik.http.services.images.loadbalancer.server.port=3023"
+      - "traefik.http.routers.images.entrypoints=websecure"
+      - "traefik.http.routers.images.tls.certresolver=myresolver"
+
+  # Notification Service
+  notification-service:
+    build:
+      context: .
+      dockerfile: backend/domains/notification-service/Dockerfile
+    container_name: leafyhealth-notification-service
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASS=${SMTP_PASS}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.notifications.rule=Host(`${DOMAIN}`) && PathPrefix(`/api/notifications`)"
+      - "traefik.http.services.notifications.loadbalancer.server.port=3029"
+      - "traefik.http.routers.notifications.entrypoints=websecure"
+      - "traefik.http.routers.notifications.tls.certresolver=myresolver"
+
+  # E-commerce Web App
+  ecommerce-web:
+    build:
+      context: .
+      dockerfile: frontend/apps/ecommerce-web/Dockerfile
+    container_name: leafyhealth-ecommerce-web
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=https://${DOMAIN}/api
+      - NEXT_PUBLIC_IMAGE_URL=https://${DOMAIN}/api/image-management
+    depends_on:
+      - auth-gateway
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.web.rule=Host(`${DOMAIN}`)"
+      - "traefik.http.services.web.loadbalancer.server.port=3000"
+      - "traefik.http.routers.web.entrypoints=websecure"
+      - "traefik.http.routers.web.tls.certresolver=myresolver"
+
+  # Mobile Commerce App
+  ecommerce-mobile:
+    build:
+      context: .
+      dockerfile: frontend/apps/ecommerce-mobile/Dockerfile
+    container_name: leafyhealth-ecommerce-mobile
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=https://${DOMAIN}/api
+      - NEXT_PUBLIC_IMAGE_URL=https://${DOMAIN}/api/image-management
+    depends_on:
+      - auth-gateway
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.mobile.rule=Host(`m.${DOMAIN}`)"
+      - "traefik.http.services.mobile.loadbalancer.server.port=3001"
+      - "traefik.http.routers.mobile.entrypoints=websecure"
+      - "traefik.http.routers.mobile.tls.certresolver=myresolver"
+
+  # Admin Portal
+  admin-portal:
+    build:
+      context: .
+      dockerfile: frontend/apps/admin-portal/Dockerfile
+    container_name: leafyhealth-admin-portal
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=https://${DOMAIN}/api
+      - NEXT_PUBLIC_IMAGE_URL=https://${DOMAIN}/api/image-management
+    depends_on:
+      - auth-gateway
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.admin.rule=Host(`admin.${DOMAIN}`)"
+      - "traefik.http.services.admin.loadbalancer.server.port=3002"
+      - "traefik.http.routers.admin.entrypoints=websecure"
+      - "traefik.http.routers.admin.tls.certresolver=myresolver"
+
+  # Super Admin Portal
+  super-admin:
+    build:
+      context: .
+      dockerfile: frontend/apps/super-admin/Dockerfile
+    container_name: leafyhealth-super-admin
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=https://${DOMAIN}/api
+      - NEXT_PUBLIC_IMAGE_URL=https://${DOMAIN}/api/image-management
+    depends_on:
+      - auth-gateway
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.superadmin.rule=Host(`superadmin.${DOMAIN}`)"
+      - "traefik.http.services.superadmin.loadbalancer.server.port=3003"
+      - "traefik.http.routers.superadmin.entrypoints=websecure"
+      - "traefik.http.routers.superadmin.tls.certresolver=myresolver"
+
+  # Operations Dashboard
+  ops-delivery:
+    build:
+      context: .
+      dockerfile: frontend/apps/ops-delivery/Dockerfile
+    container_name: leafyhealth-ops-delivery
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=https://${DOMAIN}/api
+      - NEXT_PUBLIC_IMAGE_URL=https://${DOMAIN}/api/image-management
+    depends_on:
+      - auth-gateway
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.ops.rule=Host(`ops.${DOMAIN}`)"
+      - "traefik.http.services.ops.loadbalancer.server.port=3004"
+      - "traefik.http.routers.ops.entrypoints=websecure"
+      - "traefik.http.routers.ops.tls.certresolver=myresolver"
+
+volumes:
+  postgres_data:
+  image_uploads:
+  letsencrypt:
+
+networks:
+  leafyhealth-network:
+    driver: bridge

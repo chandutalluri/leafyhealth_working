@@ -1,0 +1,28 @@
+{
+  "name": "@leafyhealth/domain-registry",
+  "version": "1.0.0",
+  "description": "LeafyHealth Domain Registry and Component Mapping",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "lucide-react": "^0.263.0",
+    "@leafyhealth/auth": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}

@@ -1,0 +1,223 @@
+modules = ["python-3.11", "nodejs-20", "postgresql-16"]
+
+[nix]
+channel = "stable-24_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Company Management Service"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Admin Portal"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "All Backend Microservices"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Authentication Service"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Super Admin Dashboard"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Multi-App Gateway"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Ecommerce Web App"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Mobile Commerce App"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Operations Dashboard"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Direct Data Gateway"
+
+[[workflows.workflow]]
+name = "Company Management Service"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd backend/domains/company-management && npm run start:dev"
+waitForPort = 3013
+
+[[workflows.workflow]]
+name = "Admin Portal"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd frontend/apps/admin-portal && npm run dev -- -p 3002"
+waitForPort = 3002
+
+[[workflows.workflow]]
+name = "All Backend Microservices"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node start-all-microservices.js"
+
+[[workflows.workflow]]
+name = "Authentication Service"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node server/authentication-service.js"
+waitForPort = 8085
+
+[[workflows.workflow]]
+name = "Super Admin Dashboard"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd frontend/apps/super-admin && npm run dev -- -p 3003"
+waitForPort = 3003
+
+[[workflows.workflow]]
+name = "Multi-App Gateway"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node server/multi-app-gateway.js"
+waitForPort = 5000
+
+[[workflows.workflow]]
+name = "Ecommerce Web App"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd frontend/apps/ecommerce-web && npm run dev -- -p 3000"
+waitForPort = 3000
+
+[[workflows.workflow]]
+name = "Mobile Commerce App"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd frontend/apps/ecommerce-mobile && npm run dev -- -p 3001"
+waitForPort = 3001
+
+[[workflows.workflow]]
+name = "Operations Dashboard"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd frontend/apps/ops-delivery && npm run dev -- -p 3004"
+waitForPort = 3004
+
+[[workflows.workflow]]
+name = "Direct Data Gateway"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd server && node direct-data-gateway.js"
+waitForPort = 8081
+
+[[ports]]
+localPort = 3000
+externalPort = 3000
+
+[[ports]]
+localPort = 3001
+externalPort = 3001
+
+[[ports]]
+localPort = 3002
+externalPort = 3002
+
+[[ports]]
+localPort = 3003
+externalPort = 3003
+
+[[ports]]
+localPort = 3004
+externalPort = 4200
+
+[[ports]]
+localPort = 3010
+
+[[ports]]
+localPort = 3011
+
+[[ports]]
+localPort = 3012
+
+[[ports]]
+localPort = 3013
+externalPort = 9000
+
+[[ports]]
+localPort = 3020
+
+[[ports]]
+localPort = 3025
+externalPort = 6000
+
+[[ports]]
+localPort = 3050
+externalPort = 5173
+
+[[ports]]
+localPort = 3065
+externalPort = 6800
+
+[[ports]]
+localPort = 5000
+externalPort = 5000
+
+[[ports]]
+localPort = 8080
+externalPort = 80
+
+[[ports]]
+localPort = 8081
+externalPort = 8081
+
+[[ports]]
+localPort = 8082
+
+[[ports]]
+localPort = 8083
+externalPort = 8000
+
+[[ports]]
+localPort = 8084
+externalPort = 8008
+
+[[ports]]
+localPort = 8085
+externalPort = 8080
+
+[[ports]]
+localPort = 8086
+externalPort = 8099
+
+[deployment]
+run = ["sh", "-c", "cd backend/domains/identity-access && npm run build && node dist/backend/domains/identity-access/src/main.js"]

@@ -1,0 +1,75 @@
+IMPORTANT: DO NOT GUESS OR PLACEHOLD.
+
+We are now finalizing the LeafyHealth Super Admin Dashboard. The backend has 26 fully containerized NestJS microservices, each responsible for different domain logic. These are:
+
+company-management, branch-management, user-role-management, product-catalog, category-management, inventory, order-management, payment-processing, customer-service, analytics-reporting, performance-monitor, notification-service, delivery-tracking, subscription-service, content-management, etc.
+
+Your task is:
+🧠 STEP 1: FULL DISCOVERY
+
+✅ List all 26 microservices by scanning the backend directory.
+✅ For each microservice:
+
+    Confirm if it is running (via health endpoint)
+
+    Confirm if Swagger API docs are available (/api/docs)
+
+    Extract available endpoints and schemas
+    ✅ Check if the frontend Super Admin Sidebar has a dedicated UI module/page for that service
+    ✅ If not, mark it as “❌ Not Integrated”
+
+🧱 STEP 2: BUILD EACH MICROSERVICE MODULE PROPERLY
+
+For each "❌ Not Integrated" service:
+
+✅ Create a new sidebar entry (with icon and route)
+✅ Build a dedicated page or layout for the service (DO NOT reuse generic template)
+✅ Connect to real API endpoints via /api/[service]/... routed through the gateway
+✅ Do not use mock data, test data, or hardcoded values
+✅ If real data is missing, seed the PostgreSQL database with relevant sample records (e.g. 5 products, 2 branches, 1 company, 3 users)
+🎯 STEP 3: SUPER ADMIN FEATURES
+
+✅ Super Admin should be able to:
+
+    View, Create, Edit, Delete entities for every microservice
+
+    Assign ownership to Branch Managers
+
+    Set roles and permissions via user-role-management
+
+    See real-time dashboards pulling from:
+
+        analytics-reporting
+
+        order-management
+
+        inventory
+
+        performance-monitor
+
+🚫 Never display a page with “coming soon”, “loading…” or a placeholder table. If the page opens, it must be functional.
+🧪 STEP 4: ENFORCE TESTING COMPLETENESS
+
+✅ When a Super Admin opens any sidebar item, the following must be true:
+
+    API request is sent and response shown
+
+    Pagination, filtering, and sorting works (if supported by API)
+
+    Table or card layout is responsive
+
+    Buttons (Add, Edit, Delete) are functional and persist to DB
+
+    No errors or loading spinners stuck
+
+🔒 CRITICAL RULES
+
+✅ Use existing Zustand authStore for token
+✅ Always call through gateway /api/ on port 5000
+✅ NEVER use mock data or test endpoints
+✅ NEVER reuse generic UI unless explicitly told
+✅ NEVER leave a service with no dashboard
+
+✅ Start now by printing a checklist of all 26 services, show integration status, and begin with the first “❌ Not Integrated” service.
+
+👉 Work one service at a time. Ask me only if a service is completely missing backend or cannot be implemented.

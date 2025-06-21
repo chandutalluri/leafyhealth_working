@@ -1,0 +1,150 @@
+export declare class ExpenseService {
+    createExpense(createExpenseDto: any): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }>;
+    getExpenses(filters?: any): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }[]>;
+    getAllExpenses(status?: string, category?: string): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }[]>;
+    getExpensesByCategory(category: string): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }[]>;
+    getExpensesByDateRange(startDate: Date, endDate: Date): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }[]>;
+    getPendingExpenses(): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }[]>;
+    getMonthlyExpenseSummary(year: number, month: number): Promise<{
+        totalExpenses: number;
+        totalAmount: number;
+        byCategory: {};
+    }>;
+    updateExpense(id: number, updateExpenseDto: any): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }>;
+    approveExpense(id: number): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }>;
+    rejectExpense(id: number, reason: string): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }>;
+    deleteExpense(id: number): Promise<{
+        message: string;
+    }>;
+    getExpenseById(id: number): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }>;
+}

@@ -1,0 +1,141 @@
+import { ExpenseService } from '../services/expense.service';
+import { CreateExpenseDto } from '../dto/create-expense.dto';
+import { UpdateExpenseDto } from '../dto/update-expense.dto';
+export declare class ExpenseController {
+    private readonly expenseService;
+    constructor(expenseService: ExpenseService);
+    createExpense(createExpenseDto: CreateExpenseDto): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }>;
+    getExpenses(page?: string, limit?: string, status?: string): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }[]>;
+    getExpensesByCategory(category: string): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }[]>;
+    getExpensesByDateRange(startDate: string, endDate: string): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }[]>;
+    getPendingExpenses(): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }[]>;
+    getMonthlyExpenseSummary(year: string, month: string): Promise<{
+        totalExpenses: number;
+        totalAmount: number;
+        byCategory: {};
+    }>;
+    getExpenseById(id: string): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }>;
+    updateExpense(id: string, updateExpenseDto: UpdateExpenseDto): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }>;
+    approveExpense(id: string): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }>;
+    rejectExpense(id: string, reason: string): Promise<{
+        id: number;
+        expenseNumber: string;
+        title: string;
+        amount: string;
+        category: string;
+        expenseDate: string;
+        submittedBy: number;
+        description: string;
+        status: string;
+        rejectionReason: string;
+        createdAt: Date;
+        updatedAt: Date;
+    }>;
+    deleteExpense(id: string): Promise<{
+        message: string;
+    }>;
+}

@@ -1,0 +1,134 @@
+You're making an excellent strategic decision. Keeping the original microservice-based Super Admin view for developers and system owners is wise — while introducing a business-domain based “Operational Super Admin” panel for functional users (admins, managers, etc.) creates clarity and professionalism.
+✅ GOAL
+
+Create an Operational Super Admin Dashboard based on Business Domains, not technical services.
+And introduce Customizable Role-Based Access Control (RBAC) that works across:
+
+    A single company
+
+    Multiple branches
+
+    Nested team roles (Owner, Admin, Manager, Staff)
+
+    Dynamic business domains (not just technical services)
+
+🔐 Step-by-Step Plan: Role and Permission System for Business-Domain Based Control
+🔁 Core Principle:
+
+    "Users are granted permissions to features, not to microservices."
+
+📦 1. Define Role Types
+Role	Level	Access Scope	Example Use Case
+Super Admin	Global	Full access to all business domains + branches	SaaS platform owner
+Company Admin	Company-wide	Access to all branches and modules	Head of operations
+Branch Admin	Per-branch	Restricted to specific branch data	Guntur branch manager
+Ops Manager	Per-module	Can manage specific modules like Orders, Finance	Finance head, Delivery manager
+Staff	Minimal	View or limited control	Call center, packaging, delivery staff
+🧩 2. Map Roles → Business Domains (Composite Modules)
+
+Let’s define what modules each role can access and what permissions they have inside.
+Module	super_admin	company_admin	branch_admin	ops_manager	staff
+Products	Full CRUD	Full CRUD	View + Edit	Custom	View
+Orders	Full	Full	View + Update	Full	View
+Inventory	Full	Full	Update only	Full	-
+Subscriptions	Full	Full	Full	-	View
+Customers	Full	View + Edit	View	-	View
+Analytics	Full	View Reports	View own	View own	-
+Finance	Full	View + Export	-	View own	-
+Company / Branch	Full	View + Add	View	-	-
+Users / Roles	Full	Add Staff	-	-	-
+
+    You can later fine-tune these to granular feature levels (like edit-only, export-only, upload-only).
+
+🧱 3. Define Data Ownership Hierarchy
+
+    Global Super Admin → Accesses all companies (multi-tenant if needed)
+
+    Company Admin → Accesses all branches under that company
+
+    Branch Admin → Accesses only their branch (via branch_id)
+
+    Permissions are enforced at:
+
+        JWT level: Embed role, branch_id, company_id
+
+        Frontend UI level: canAccess('orders.edit')
+
+        Backend Guard level: Custom @Roles(), @BranchRestricted() decorators
+
+🔐 4. RBAC Backend Design (in PostgreSQL)
+
+-- roles table
+id | name           | description
+---|----------------|------------------
+1  | super_admin    | Platform owner
+2  | company_admin  | Admin for company
+3  | branch_admin   | Manages one branch
+4  | ops_manager    | Operates one module
+5  | staff          | Limited view access
+
+-- permissions table
+id | module         | action        | description
+---|----------------|---------------|---------------------------
+1  | products       | view          | View products
+2  | products       | create        | Add new products
+3  | orders         | update        | Update order status
+...
+
+-- role_permissions
+role_id | permission_id
+--------|----------------
+1       | 1
+1       | 2
+2       | 1
+...
+
+-- users table
+id | email          | role_id | branch_id | company_id
+---|----------------|---------|-----------|------------
+1  | super@leafy.in | 1       | null      | null
+2  | ops@guntur.in  | 3       | 22        | 5
+
+🧠 5. Dynamic Frontend Permissions (Zustand Store)
+
+Create a usePermissionStore():
+
+export const usePermissionStore = create((set) => ({
+  role: null,
+  permissions: [],
+  can: (module: string, action: string) => {
+    return permissions.includes(`${module}.${action}`);
+  },
+  hydratePermissions: async () => {
+    const res = await fetch('/api/auth/permissions');
+    const data = await res.json();
+    set({ role: data.role, permissions: data.permissions });
+  }
+}));
+
+Then in your components:
+
+const { can } = usePermissionStore();
+{can('products', 'edit') && <ProductEditForm />}
+
+🏢 6. Operational Super Admin Dashboard Sidebar Example
+
+const businessModules = [
+  { name: 'Products', icon: <PackageIcon />, route: '/products' },
+  { name: 'Orders', icon: <CartIcon />, route: '/orders' },
+  { name: 'Customers', icon: <UsersIcon />, route: '/customers' },
+  { name: 'Subscriptions', icon: <RepeatIcon />, route: '/subscriptions' },
+  { name: 'Finance', icon: <BankIcon />, route: '/finance' },
+  { name: 'Analytics', icon: <ChartBarIcon />, route: '/analytics' },
+];
+
+→ Sidebar will only render routes that the user has access to.
+🧩 Summary
+Area	Recommendation
+Microservices in Sidebar	❌ Avoid in operational dashboard – too complex
+Business-Domain Grouping	✅ Yes. Group services into 6-8 functional modules
+Permissions	✅ Role-based per business module
+Frontend Enforcement	✅ Use Zustand and role-permissions per module
+Backend Enforcement	✅ Use decorators with role/branch validation
+User Simplicity	✅ Unified forms with multiple service calls (abstracted from user)
+Technical Flexibility	✅ Supports fine-grained control as app grows

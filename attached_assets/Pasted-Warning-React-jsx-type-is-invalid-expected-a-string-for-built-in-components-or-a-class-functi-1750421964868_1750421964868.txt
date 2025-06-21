@@ -1,0 +1,57 @@
+Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check your code at index.tsx:114.
+    at SuperAdminDashboard (webpack-internal:///(pages-dir-browser)/./src/pages/index.tsx:19:94)
+    at ToastProvider (webpack-internal:///(pages-dir-browser)/./src/providers/ToastProvider.tsx:9:11)
+    at AuthProvider (webpack-internal:///(pages-dir-browser)/./src/providers/AuthProvider.tsx:9:11)
+    at QueryClientProvider (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js:28:3)
+    at QueryProvider (webpack-internal:///(pages-dir-browser)/./src/providers/QueryProvider.tsx:17:11)
+    at div
+    at main
+    at div
+    at App (webpack-internal:///(pages-dir-browser)/./src/pages/_app.tsx:23:11)
+    at PathnameContextProviderAdapter (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at PagesDevOverlayErrorBoundary (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/components/react-dev-overlay/pages/pages-dev-overlay-error-boundary.js:32:9)
+    at PagesDevOverlay (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/components/react-dev-overlay/pages/pages-dev-overlay.js:18:11)
+    at Container (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/index.js:80:1)
+    at AppContainer (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/index.js:188:11)
+    at Root (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/index.js:417:11)
+
+Check your code at index.tsx:114.
+at SuperAdminDashboard (webpack-internal:///(pages-dir-browser)/./src/pages/index.tsx:19:94)
+at ToastProvider (webpack-internal:///(pages-dir-browser)/./src/providers/ToastProvider.tsx:9:11)
+at AuthProvider (webpack-internal:///(pages-dir-browser)/./src/providers/AuthProvider.tsx:9:11)
+at QueryClientProvider (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js:28:3)
+at QueryProvider (webpack-internal:///(pages-dir-browser)/./src/providers/QueryProvider.tsx:17:11)
+at div
+at main
+at div
+at App (webpack-internal:///(pages-dir-browser)/./src/pages/_app.tsx:23:11)
+at PathnameContextProviderAdapter (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+at PagesDevOverlayErrorBoundary (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/components/react-dev-overlay/pages/pages-dev-overlay-error-boundary.js:32:9)
+at PagesDevOverlay (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/components/react-dev-overlay/pages/pages-dev-overlay.js:18:11)
+at Container (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/index.js:80:1)
+at AppContainer (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/index.js:188:11)
+at Root (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/index.js:417:11)
+at t.value (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:3003/__replco/static/devtools/eruda/3.2.3/eruda.js:2:17465)
+at new t (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:3003/__replco/static/devtools/eruda/3.2.3/eruda.js:2:12630)
+at t.value (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:3003/__replco/static/devtools/eruda/3.2.3/eruda.js:2:32766)
+at https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:3003/__replco/static/devtools/eruda/3.2.3/eruda.js:2:34400
+Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check your code at index.tsx:78.
+    at SuperAdminDashboard (webpack-internal:///(pages-dir-browser)/./src/pages/index.tsx:19:94)
+    at ToastProvider (webpack-internal:///(pages-dir-browser)/./src/providers/ToastProvider.tsx:9:11)
+    at AuthProvider (webpack-internal:///(pages-dir-browser)/./src/providers/AuthProvider.tsx:9:11)
+    at QueryClientProvider (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js:28:3)
+    at QueryProvider (webpack-internal:///(pages-dir-browser)/./src/providers/QueryProvider.tsx:17:11)
+    at div
+    at main
+    at div
+    at App (webpack-internal:///(pages-dir-browser)/./src/pages/_app.tsx:23:11)
+    at PathnameContextProviderAdapter (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at PagesDevOverlayErrorBoundary (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/components/react-dev-overlay/pages/pages-dev-overlay-error-boundary.js:32:9)
+    at PagesDevOverlay (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/components/react-dev-overlay/pages/pages-dev-overlay.js:18:11)
+    at Container (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/index.js:80:1)
+    at AppContainer (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/index.js:188:11)
+    at Root (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/index.js:417:11)

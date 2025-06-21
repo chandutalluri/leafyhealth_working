@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "ES6"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@leafyhealth/ui-kit": ["./packages/ui-kit/src/index.ts"],
+      "@leafyhealth/ui-kit/*": ["./packages/ui-kit/src/*"],
+      "@leafyhealth/api-client": ["./packages/api-client/src/index.ts"],
+      "@leafyhealth/api-client/*": ["./packages/api-client/src/*"],
+      "@leafyhealth/auth": ["./packages/auth/src/index.ts"],
+      "@leafyhealth/auth/*": ["./packages/auth/src/*"],
+      "@leafyhealth/config": ["./packages/config/src/index.ts"],
+      "@leafyhealth/config/*": ["./packages/config/src/*"],
+      "@leafyhealth/form-schema": ["./packages/form-schema/src/index.ts"],
+      "@leafyhealth/form-schema/*": ["./packages/form-schema/src/*"],
+      "@leafyhealth/utils": ["./packages/utils/src/index.ts"],
+      "@leafyhealth/utils/*": ["./packages/utils/src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "apps/*/src/**/*",
+    "packages/*/src/**/*"
+  ],
+  "exclude": ["node_modules"]
+}

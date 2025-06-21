@@ -1,0 +1,219 @@
+      /////////////////////
+   ///////////////////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////        Curious and driven?
+  ///////////////@@@@@@@///////        Work with us!
+  ///////////////@@@@@@@///////
+  ///////////////@@@@@@@///////        https://join.replit.com/hack.with.us
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@#//////////////
+   ///////////////////////////
+      /////////////////////
+      
+_app-d05781eba9d381d4.js:38 [LaunchDarkly] LaunchDarkly client initialized
+1748667421694_881f28aaaddef4f3a58fc73d393c5916.png:1 
+            
+            
+           Failed to load resource: the server responded with a status of 403 ()Understand this error
+zipper.pike.platform.replit.com/repls/596134ae-2368-4b16-bd88-c5ed3a677441/files/dir?path=.:1 
+            
+            
+           Failed to load resource: the server responded with a status of 500 ()Understand this error
+692-9b76a5c425fb5988.js:1 Uncaught (in promise) Error: Error when trying to read dir through zipper, status: 500, body: Internal Error
+    at 692-9b76a5c425fb5988.js:1:58124
+    at Object.next (main-0136897526d48381.js:1:174131)
+    at n (main-0136897526d48381.js:1:57526)
+    at u (main-0136897526d48381.js:1:57723)Understand this error
+zipper.pike.platform.replit.com/repls/596134ae-2368-4b16-bd88-c5ed3a677441/files/file?path=.replit:1 
+            
+            
+           Failed to load resource: the server responded with a status of 500 ()Understand this error
+692-9b76a5c425fb5988.js:1 Uncaught (in promise) Error: Error when trying to read file through zipper, status: 500, body: Internal Error
+    at 692-9b76a5c425fb5988.js:1:58951
+    at Object.next (main-0136897526d48381.js:1:174131)
+    at n (main-0136897526d48381.js:1:57526)
+    at u (main-0136897526d48381.js:1:57723)Understand this error
+zipper.pike.platform.replit.com/repls/596134ae-2368-4b16-bd88-c5ed3a677441/files/dir?path=.:1 
+            
+            
+           Failed to load resource: the server responded with a status of 500 ()Understand this error
+692-9b76a5c425fb5988.js:1 Uncaught (in promise) Error: Error when trying to read dir through zipper, status: 500, body: Internal Error
+    at 692-9b76a5c425fb5988.js:1:58124
+    at Object.next (main-0136897526d48381.js:1:174131)
+    at n (main-0136897526d48381.js:1:57526)
+    at u (main-0136897526d48381.js:1:57723)Understand this error
+zipper.pike.platform.replit.com/repls/596134ae-2368-4b16-bd88-c5ed3a677441/files/file?path=.replit:1 
+            
+            
+           Failed to load resource: the server responded with a status of 500 ()Understand this error
+zipper.pike.platform.replit.com/repls/596134ae-2368-4b16-bd88-c5ed3a677441/files/dir?path=.:1 
+            
+            
+           Failed to load resource: the server responded with a status of 500 ()Understand this error
+zipper.pike.platform.replit.com/repls/596134ae-2368-4b16-bd88-c5ed3a677441/files/dir?path=.:1 
+            
+            
+           Failed to load resource: the server responded with a status of 500 ()Understand this error
+692-9b76a5c425fb5988.js:1 Uncaught (in promise) Error: Error when trying to read dir through zipper, status: 500, body: Internal Error
+    at 692-9b76a5c425fb5988.js:1:58124
+    at Object.next (main-0136897526d48381.js:1:174131)
+    at n (main-0136897526d48381.js:1:57526)
+    at u (main-0136897526d48381.js:1:57723)Understand this error
+analytics.tiktok.com/i18n/pixel/events.js?sdkid=D004GE3C77U8PIVDSDJG&lib=ttq:1 
+            
+            
+           Failed to load resource: net::ERR_CONNECTION_TIMED_OUTUnderstand this error
+/@forrealbeatz123/leafyforworking?v=1:1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+zipper.pike.platform.replit.com/repls/596134ae-2368-4b16-bd88-c5ed3a677441/files/dir?path=.:1 
+            
+            
+           Failed to load resource: the server responded with a status of 500 ()Understand this error
+692-9b76a5c425fb5988.js:1 Uncaught (in promise) Error: Error when trying to read dir through zipper, status: 500, body: Internal Error
+    at 692-9b76a5c425fb5988.js:1:58124
+    at Object.next (main-0136897526d48381.js:1:174131)
+    at n (main-0136897526d48381.js:1:57526)
+    at u (main-0136897526d48381.js:1:57723)Understand this error
+zipper.pike.platform.replit.com/repls/596134ae-2368-4b16-bd88-c5ed3a677441/files/file?path=.replit:1 
+            
+            
+           Failed to load resource: the server responded with a status of 500 ()Understand this error
+www.google.com/pagead/1p-user-list/11411994397/?random=1750402840158&cv=11&fst=1750402800000&bg=ffffff&guid=ON&async=1&gtm=45be56g0v9171242957za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~103351869~103351871~104684208~104684211~104718208~104766476~104766478~104791498~104791500&u_w=1920&u_h=1080&url=https%3A%2F%2Freplit.com%2F%40envirosyzleafyh%2Fleafyforworkingwork&ref=https%3A%2F%2Freplit.com%2F%40forrealbeatz123%2Fleafyforworking%3Fv%3D1&hn=www.googleadservices.com&frm=0&tiba=leafy_for_working_work%20-%20Replit&npa=0&auid=1442669977.1750399195&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B137.0.7151.119%7CChromium%3B137.0.7151.119%7CNot%252FA)Brand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&fledge=1&data=event%3Dpage_view&rfmt=3&fmt=3&is_vtc=1&cid=CAQSKQDZpuyzVCYGOWbQOd2ziRYnylUuqAraWmXDQA_BmvWNh6LWjJL0Qeeq&random=595441221&rmt_tld=0&ipr=y:1 
+            
+            
+           Failed to load resource: net::ERR_CONNECTION_CLOSEDUnderstand this error
+1748667421694_881f28aaaddef4f3a58fc73d393c5916.png:1 
+            
+            
+           Failed to load resource: the server responded with a status of 403 ()Understand this error
+29Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.Understand this error
+framework-c73783180ffe4324.js:1 Unrecognized feature: 'ambient-light-sensor'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+framework-c73783180ffe4324.js:1 Unrecognized feature: 'battery'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+framework-c73783180ffe4324.js:1 Unrecognized feature: 'execution-while-not-rendered'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+framework-c73783180ffe4324.js:1 Unrecognized feature: 'execution-while-out-of-viewport'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+framework-c73783180ffe4324.js:1 Unrecognized feature: 'layout-animations'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+framework-c73783180ffe4324.js:1 Unrecognized feature: 'legacy-image-formats'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+framework-c73783180ffe4324.js:1 Unrecognized feature: 'navigation-override'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+framework-c73783180ffe4324.js:1 Unrecognized feature: 'oversized-images'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+framework-c73783180ffe4324.js:1 Unrecognized feature: 'publickey-credentials'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+framework-c73783180ffe4324.js:1 Unrecognized feature: 'speaker-selection'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+framework-c73783180ffe4324.js:1 Unrecognized feature: 'unoptimized-images'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+framework-c73783180ffe4324.js:1 Unrecognized feature: 'unsized-media'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+framework-c73783180ffe4324.js:1 Unrecognized feature: 'pointer-lock'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+framework-c73783180ffe4324.js:1 Allow attribute will take precedence over 'allowfullscreen'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+framework-c73783180ffe4324.js:1 Allow attribute will take precedence over 'allowpaymentrequest'.
+_ @ framework-c73783180ffe4324.js:1Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'ambient-light-sensor'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'battery'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'execution-while-not-rendered'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'execution-while-out-of-viewport'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'layout-animations'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'legacy-image-formats'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'navigation-override'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'oversized-images'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'publickey-credentials'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'speaker-selection'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'unoptimized-images'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'unsized-media'.Understand this warning
+workspace_iframe.html:32 Allow attribute will take precedence over 'allowfullscreen'.Understand this warning
+workspace_iframe.html:32 Allow attribute will take precedence over 'allowpaymentrequest'.Understand this warning
+workspace_iframe.html?initialPath=%2F&id=%3Ar16d%3A:142 Refused to load the script 'https://replit.com/public/js/beacon.js' because it violates the following Content Security Policy directive: "script-src 'self' 'unsafe-eval' 'unsafe-inline'". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+onIframeLoad @ workspace_iframe.html?initialPath=%2F&id=%3Ar16d%3A:142Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+geist-latin.woff2:1 
+            
+            
+           Failed to load resource: the server responded with a status of 403 (Forbidden)Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+workspace_iframe.html?initialPath=%2F&id=%3Ar16d%3A:142 Refused to load the script 'https://replit.com/public/js/beacon.js' because it violates the following Content Security Policy directive: "script-src 'self' 'unsafe-eval' 'unsafe-inline'". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+onIframeLoad @ workspace_iframe.html?initialPath=%2F&id=%3Ar16d%3A:142Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+geist-latin.woff2:1 
+            
+            
+           Failed to load resource: the server responded with a status of 403 (Forbidden)Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Console.js:61 Location detection failed: GeolocationPositionError
+Mt.forEach.n.<computed> @ Console.js:61Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+Network.js:227 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-2vv1a8vsa54nn.pike.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error

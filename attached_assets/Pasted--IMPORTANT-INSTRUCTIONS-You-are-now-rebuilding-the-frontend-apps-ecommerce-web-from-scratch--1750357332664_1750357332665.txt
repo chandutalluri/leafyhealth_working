@@ -1,0 +1,87 @@
+⚠️ IMPORTANT INSTRUCTIONS:
+You are now rebuilding the `frontend/apps/ecommerce-web` from scratch.
+
+📌 Do NOT fix existing buggy code.
+📌 Completely remove the current implementation.
+📌 Recreate a fully modern, production-ready, customer-friendly eCommerce frontend using:
+
+- ✅ Next.js 15.x (Pages Router)
+- ✅ Tailwind CSS with Glassmorphism effects
+- ✅ Framer Motion animations
+- ✅ Zustand for state (cart, branch, auth)
+- ✅ React Query for API calls
+- ✅ next/image for optimized product images
+
+🏗 STEP 1: BOILERPLATE FOUNDATION
+- Setup layout: `Header`, `Footer`, and `_app.tsx` with QueryClientProvider, Zustand provider, Toaster
+- Include global theme with soft green-white gradient background (avoid dark green), glass cards, rounded UI
+- Use consistent spacing, typography, and elegant visual hierarchy
+
+🌍 STEP 2: LOCATION + BRANCH LOGIC
+- On load, detect browser location (geolocation API)
+- Use `/api/branches/nearby?lat=...&lng=...` to determine branch
+- Store `branchId` in Zustand (persisted)
+- If no location permission, show popup to manually select branch from dropdown
+
+🛒 STEP 3: E-COMMERCE PAGES
+Create these routes with dynamic data and smooth UX:
+- `/` (home): Hero, features, categories, featured products
+- `/products`: Full product listing with filters (category, price)
+- `/categories`: All categories with counts
+- `/product/[id]`: Product details + Add to Cart
+- `/cart`: Cart page with quantities, total, and checkout button
+- `/checkout`: Placeholder checkout with summary
+- `/login`, `/register`: JWT auth with proper error handling
+
+👨‍🍳 STEP 4: SUBSCRIPTION FLOW
+New Feature: Subscription System
+- Add `/subscriptions` page
+- Allow user to subscribe to:
+  - Meals: Breakfast, Lunch, Dinner
+  - Durations: 1, 3, 7, 30 days
+- Auto-select delivery address (from browser or profile)
+- Auto-fill items (e.g., fixed menu or pick from subscription menu)
+- Save to `/api/subscriptions` backend (POST)
+
+Ensure:
+- Subscription preview before confirmation
+- Modify or cancel subscription anytime
+- Display active subscriptions under `My Orders`
+
+📦 STEP 5: CART + STORE MANAGEMENT
+- Zustand store: cartItems, totalPrice, totalItems
+- Add/remove/update quantity logic
+- Auto-refresh when user switches branch (refresh data)
+
+📱 STEP 6: PWA + MOBILE OPTIMIZATION
+- Enable PWA support (manifest, icons, offline)
+- Mobile-first responsive design
+- Sticky bottom navbar on mobile with shortcuts: Home, Search, Cart, Account
+
+🎨 STEP 7: UI ENHANCEMENTS
+- GlassCard, GlassButton, GlassBadge components
+- Smooth transitions with `framer-motion`
+- Loading skeletons during API calls
+- No blank screens or flickers
+- Use meaningful icons (e.g., heroicons)
+
+🚫 DO NOT:
+- Copy or reuse old component bugs
+- Leave pages empty
+- Ignore broken microservice connections
+- Create placeholder logic for cart/auth/branch/subscription
+
+🟢 FINAL OUTPUT EXPECTATIONS:
+- Homepage, categories, products, product details
+- Fully working cart and checkout
+- Integrated subscription flow (meals + duration)
+- Role-aware frontend (branch-specific products)
+- Connected to live backend (use `/api/` endpoints)
+
+⚙ TECH STACK IS LOCKED – DO NOT CHANGE:
+- Next.js 15 (Pages Router)
+- TailwindCSS
+- Zustand
+- React Query
+- PostgreSQL via backend APIs
+- Running on Replit for now (will be deployed to VPS)

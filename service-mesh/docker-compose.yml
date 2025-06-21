@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  consul:
+    image: consul:1.16
+    command: consul agent -config-file=/consul/config/consul-config.json
+    volumes:
+      - ./consul-config.json:/consul/config/consul-config.json
+      - consul-data:/tmp/consul/data
+    ports:
+      - "8500:8500"
+      - "8502:8502"
+      - "8600:8600/udp"
+    networks:
+      - service-mesh
+    restart: unless-stopped
+
+  envoy-gateway:
+    image: envoyproxy/envoy:v1.28-latest
+    volumes:
+      - ./envoy-gateway.yaml:/etc/envoy/envoy.yaml
+    ports:
+      - "8080:8080"
+      - "9901:9901"
+    networks:
+      - service-mesh
+    depends_on:
+      - consul
+    restart: unless-stopped
+
+networks:
+  service-mesh:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  consul-data:

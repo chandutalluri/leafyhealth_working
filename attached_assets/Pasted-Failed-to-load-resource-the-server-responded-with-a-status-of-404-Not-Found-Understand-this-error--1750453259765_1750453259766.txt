@@ -1,0 +1,67 @@
+Failed to load resource: the server responded with a status of 404 (Not Found)Understand this error
+Console.js:61 Response status: 404 Not Found
+Console.js:61 Response headers: Object
+Console.js:61 Error response body: <!DOCTYPE html><html><head><style data-next-hide-fouc="true">body{display:none}</style><noscript data-next-hide-fouc="true"><style>body{display:block}</style></noscript><meta charSet="utf-8" data-next-head=""/><meta name="viewport" content="width=device-width" data-next-head=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills.js"></script><script src="/_next/static/chunks/webpack.js" defer=""></script><script src="/_next/static/chunks/main.js" defer=""></script><script src="/_next/static/chunks/pages/_app.js" defer=""></script><script src="/_next/static/chunks/pages/_error.js" defer=""></script><script src="/_next/static/development/_buildManifest.js" defer=""></script><script src="/_next/static/development/_ssgManifest.js" defer=""></script><noscript id="__next_css__DO_NOT_USE__"></noscript></head><body><div id="__next"><div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-purple-50"><div class="animate-spin rounded-full h-32 w-32 border-b-2 border-indigo-600"></div></div><div dir="ltr" class="tsqd-parent-container"></div></div><script src="/_next/static/chunks/react-refresh.js"></script><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404,"hostname":"localhost"}},"page":"/_error","query":{},"buildId":"development","isFallback":false,"gip":true,"scriptLoader":[]}</script></body></html>
+Console.js:61 Login error: Error: HTTP 404: Not Found
+    at loginInternal (authStore.ts:71:19)
+    at async handleSubmit (login.tsx:35:21)
+Mt.forEach.n.<computed> @ Console.js:61
+await in Mt.forEach.n.<computed>
+handleSubmit @ login.tsx:35
+callCallback @ react-dom.development.js:4164
+invokeGuardedCallbackDev @ react-dom.development.js:4213
+invokeGuardedCallback @ react-dom.development.js:4277
+invokeGuardedCallbackAndCatchFirstError @ react-dom.development.js:4291
+executeDispatch @ react-dom.development.js:9041
+processDispatchQueueItemsInOrder @ react-dom.development.js:9073
+processDispatchQueue @ react-dom.development.js:9086
+dispatchEventsForPlugins @ react-dom.development.js:9097
+eval @ react-dom.development.js:9288
+batchedUpdates$1 @ react-dom.development.js:26135
+batchedUpdates @ react-dom.development.js:3991
+dispatchEventForPluginEventSystem @ react-dom.development.js:9287
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ react-dom.development.js:6465
+dispatchEvent @ react-dom.development.js:6457
+dispatchDiscreteEvent @ react-dom.development.js:6430Understand this error
+Console.js:61 Attempting login to: /api/auth/internal/login
+Console.js:61 Request payload: Object
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:3003/api/auth/internal/login:1 
+            
+            
+           Failed to load resource: the server responded with a status of 404 (Not Found)Understand this error
+Console.js:61 Response status: 404 Not Found
+Console.js:61 Response headers: Object
+Console.js:61 Error response body: <!DOCTYPE html><html><head><style data-next-hide-fouc="true">body{display:none}</style><noscript data-next-hide-fouc="true"><style>body{display:block}</style></noscript><meta charSet="utf-8" data-next-head=""/><meta name="viewport" content="width=device-width" data-next-head=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills.js"></script><script src="/_next/static/chunks/webpack.js" defer=""></script><script src="/_next/static/chunks/main.js" defer=""></script><script src="/_next/static/chunks/pages/_app.js" defer=""></script><script src="/_next/static/chunks/pages/_error.js" defer=""></script><script src="/_next/static/development/_buildManifest.js" defer=""></script><script src="/_next/static/development/_ssgManifest.js" defer=""></script><noscript id="__next_css__DO_NOT_USE__"></noscript></head><body><div id="__next"><div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-purple-50"><div class="animate-spin rounded-full h-32 w-32 border-b-2 border-indigo-600"></div></div><div dir="ltr" class="tsqd-parent-container"></div></div><script src="/_next/static/chunks/react-refresh.js"></script><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404,"hostname":"localhost"}},"page":"/_error","query":{},"buildId":"development","isFallback":false,"gip":true,"scriptLoader":[]}</script></body></html>
+Console.js:61 Login error: Error: HTTP 404: Not Found
+    at loginInternal (authStore.ts:71:19)
+    at async handleSubmit (login.tsx:35:21)
+Mt.forEach.n.<computed> @ Console.js:61
+await in Mt.forEach.n.<computed>
+handleSubmit @ login.tsx:35
+callCallback @ react-dom.development.js:4164
+invokeGuardedCallbackDev @ react-dom.development.js:4213
+invokeGuardedCallback @ react-dom.development.js:4277
+invokeGuardedCallbackAndCatchFirstError @ react-dom.development.js:4291
+executeDispatch @ react-dom.development.js:9041
+processDispatchQueueItemsInOrder @ react-dom.development.js:9073
+processDispatchQueue @ react-dom.development.js:9086
+dispatchEventsForPlugins @ react-dom.development.js:9097
+eval @ react-dom.development.js:9288
+batchedUpdates$1 @ react-dom.development.js:26135
+batchedUpdates @ react-dom.development.js:3991
+dispatchEventForPluginEventSystem @ react-dom.development.js:9287
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ react-dom.development.js:6465
+dispatchEvent @ react-dom.development.js:6457
+dispatchDiscreteEvent @ react-dom.development.js:6430Understand this error
+Console.js:61 Attempting login to: /api/auth/internal/login
+Console.js:61 Request payload: Object
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:3003/api/auth/internal/login:1 
+            
+            
+           Failed to load resource: the server responded with a status of 404 (Not Found)Understand this error
+Console.js:61 Response status: 404 Not Found
+Console.js:61 Response headers: Object
+Console.js:61 Error response body: <!DOCTYPE html><html><head><style data-next-hide-fouc="true">body{display:none}</style><noscript data-next-hide-fouc="true"><style>body{display:block}</style></noscript><meta charSet="utf-8" data-next-head=""/><meta name="viewport" content="width=device-width" data-next-head=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills.js"></script><script src="/_next/static/chunks/webpack.js" defer=""></script><script src="/_next/static/chunks/main.js" defer=""></script><script src="/_next/static/chunks/pages/_app.js" defer=""></script><script src="/_next/static/chunks/pages/_error.js" defer=""></script><script src="/_next/static/development/_buildManifest.js" defer=""></script><script src="/_next/static/development/_ssgManifest.js" defer=""></script><noscript id="__next_css__DO_NOT_USE__"></noscript></head><body><div id="__next"><div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-purple-50"><div class="animate-spin rounded-full h-32 w-32 border-b-2 border-indigo-600"></div></div><div dir="ltr" class="tsqd-parent-container"></div></div><script src="/_next/static/chunks/react-refresh.js"></script><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"statusCode":404,"hostname":"localhost"}},"page":"/_error","query":{},"buildId":"development","isFallback":false,"gip":true,"scriptLoader":[]}</script></body></html>
+Console.js:61 Login error: Error: HTTP 404: Not Found
+    at loginInternal (authStore.ts:71:19)
+    at async handleSubmit (login.tsx:35:21)

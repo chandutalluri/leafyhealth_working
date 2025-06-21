@@ -1,0 +1,46 @@
+{
+  "name": "@leafyhealth/frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LeafyHealth Frontend - Multi-application e-commerce platform",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "build:packages": "turbo run build --filter='./packages/*'",
+    "build:apps": "turbo run build --filter='./apps/*'",
+    "dev": "turbo run dev",
+    "dev:web": "turbo run dev --filter=ecommerce-web",
+    "dev:mobile": "turbo run dev --filter=ecommerce-mobile", 
+    "dev:admin": "turbo run dev --filter=admin-portal",
+    "dev:super-admin": "turbo run dev --filter=super-admin",
+    "dev:ops": "turbo run dev --filter=ops-delivery",
+    "start": "turbo run start",
+    "start:prod": "turbo run start --filter='./apps/*'",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "eslint-config-next": "^14.0.3",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.0",
+    "turbo": "^1.11.0",
+    "typescript": "^5.3.0"
+  },
+  "packageManager": "pnpm@8.10.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

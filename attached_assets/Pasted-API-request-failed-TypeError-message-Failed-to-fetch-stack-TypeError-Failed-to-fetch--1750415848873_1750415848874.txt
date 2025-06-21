@@ -1,0 +1,66 @@
+API request failed: 
+TypeError {}
+message: "Failed to fetch"
+stack: "TypeError: Failed to fetch↵ at window.fetch (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/static/devtools/eruda/3.2.3/eruda.js:2:218642)↵ at ApiClient.request (webpack-internal:///(pages-dir-browser)/./src/lib/api.ts:18:36)↵ at ApiClient.getProducts (webpack-internal:///(pages-dir-browser)/./src/lib/api.ts:31:21)↵ at ProductsPage.useQuery (webpack-internal:///(pages-dir-browser)/./src/pages/products.tsx:67:82)↵ at Object.fetchFn [as fn] (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/query.js:213:14)↵ at run (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/retryer.js:91:49)↵ at Object.start (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/retryer.js:132:9)↵ at Query.fetch (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/query.js:296:26)↵ at #executeFetch (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/queryObserver.js:174:38)↵ at QueryObserver.onSubscribe (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/queryObserver.js:57:27)↵ at QueryObserver.subscribe (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/subscribable.js:13:10)↵ at eval (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/react-query/build/modern/useBaseQuery.js:60:56)↵ at subscribeToStore (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:16958:10)↵ at commitHookEffectListMount (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:23145:26)↵ at commitPassiveMountOnFiber (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24921:13)↵ at commitPassiveMountEffects_complete (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24886:9)↵ at commitPassiveMountEffects_begin (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24873:7)↵ at commitPassiveMountEffects (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24861:3)↵ at flushPassiveEffectsImpl (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:27034:3)↵ at flushPassiveEffects (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:26979:14)↵ at eval (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:26764:9)↵ at workLoop (webpack-internal:///(pages-dir-browser)/../../../node_modules/scheduler/cjs/scheduler.development.js:266:34)↵ at flushWork (webpack-internal:///(pages-dir-browser)/../../../node_modules/scheduler/cjs/scheduler.development.js:239:14)↵ at MessagePort.performWorkUntilDeadline (webpack-internal:///(pages-dir-browser)/../../../node_modules/scheduler/cjs/scheduler.development.js:533:21)"
+get stack: ƒ ()
+set stack: ƒ ()
+[[Prototype]]: Object
+
+API request failed: 
+TypeError {}
+message: "Failed to fetch"
+stack: "TypeError: Failed to fetch↵ at window.fetch (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/static/devtools/eruda/3.2.3/eruda.js:2:218642)↵ at ApiClient.request (webpack-internal:///(pages-dir-browser)/./src/lib/api.ts:18:36)↵ at ApiClient.getCategories (webpack-internal:///(pages-dir-browser)/./src/lib/api.ts:34:21)↵ at ProductsPage.useQuery (webpack-internal:///(pages-dir-browser)/./src/pages/products.tsx:85:82)↵ at Object.fetchFn [as fn] (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/query.js:213:14)↵ at run (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/retryer.js:91:49)↵ at Object.start (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/retryer.js:132:9)↵ at Query.fetch (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/query.js:296:26)↵ at #executeFetch (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/queryObserver.js:174:38)↵ at QueryObserver.onSubscribe (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/queryObserver.js:57:27)↵ at QueryObserver.subscribe (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/subscribable.js:13:10)↵ at eval (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/react-query/build/modern/useBaseQuery.js:60:56)↵ at subscribeToStore (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:16958:10)↵ at commitHookEffectListMount (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:23145:26)↵ at commitPassiveMountOnFiber (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24921:13)↵ at commitPassiveMountEffects_complete (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24886:9)↵ at commitPassiveMountEffects_begin (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24873:7)↵ at commitPassiveMountEffects (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24861:3)↵ at flushPassiveEffectsImpl (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:27034:3)↵ at flushPassiveEffects (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:26979:14)↵ at eval (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:26764:9)↵ at workLoop (webpack-internal:///(pages-dir-browser)/../../../node_modules/scheduler/cjs/scheduler.development.js:266:34)↵ at flushWork (webpack-internal:///(pages-dir-browser)/../../../node_modules/scheduler/cjs/scheduler.development.js:239:14)↵ at MessagePort.performWorkUntilDeadline (webpack-internal:///(pages-dir-browser)/../../../node_modules/scheduler/cjs/scheduler.development.js:533:21)"
+get stack: ƒ ()
+set stack: ƒ ()
+[[Prototype]]: Object
+
+Failed to fetch
+at window.fetch (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/static/devtools/eruda/3.2.3/eruda.js:2:218642)
+at ApiClient.request (webpack-internal:///(pages-dir-browser)/./src/lib/api.ts:18:36)
+at ApiClient.getProducts (webpack-internal:///(pages-dir-browser)/./src/lib/api.ts:31:21)
+at ProductsPage.useQuery (webpack-internal:///(pages-dir-browser)/./src/pages/products.tsx:67:82)
+at Object.fetchFn [as fn] (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/query.js:213:14)
+at run (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/retryer.js:91:49)
+at Object.start (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/retryer.js:132:9)
+at Query.fetch (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/query.js:296:26)
+at #executeFetch (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/queryObserver.js:174:38)
+at QueryObserver.onSubscribe (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/queryObserver.js:57:27)
+at QueryObserver.subscribe (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/subscribable.js:13:10)
+at eval (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/react-query/build/modern/useBaseQuery.js:60:56)
+at subscribeToStore (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:16958:10)
+at commitHookEffectListMount (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:23145:26)
+at commitPassiveMountOnFiber (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24921:13)
+at commitPassiveMountEffects_complete (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24886:9)
+at commitPassiveMountEffects_begin (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24873:7)
+at commitPassiveMountEffects (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24861:3)
+at flushPassiveEffectsImpl (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:27034:3)
+at flushPassiveEffects (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:26979:14)
+at eval (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:26764:9)
+at workLoop (webpack-internal:///(pages-dir-browser)/../../../node_modules/scheduler/cjs/scheduler.development.js:266:34)
+at flushWork (webpack-internal:///(pages-dir-browser)/../../../node_modules/scheduler/cjs/scheduler.development.js:239:14)
+at MessagePort.performWorkUntilDeadline (webpack-internal:///(pages-dir-browser)/../../../node_modules/scheduler/cjs/scheduler.development.js:533:21)
+Failed to fetch
+at window.fetch (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/static/devtools/eruda/3.2.3/eruda.js:2:218642)
+at ApiClient.request (webpack-internal:///(pages-dir-browser)/./src/lib/api.ts:18:36)
+at ApiClient.getCategories (webpack-internal:///(pages-dir-browser)/./src/lib/api.ts:34:21)
+at ProductsPage.useQuery (webpack-internal:///(pages-dir-browser)/./src/pages/products.tsx:85:82)
+at Object.fetchFn [as fn] (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/query.js:213:14)
+at run (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/retryer.js:91:49)
+at Object.start (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/retryer.js:132:9)
+at Query.fetch (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/query.js:296:26)
+at #executeFetch (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/queryObserver.js:174:38)
+at QueryObserver.onSubscribe (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/queryObserver.js:57:27)
+at QueryObserver.subscribe (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/query-core/build/modern/subscribable.js:13:10)
+at eval (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/react-query/build/modern/useBaseQuery.js:60:56)
+at subscribeToStore (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:16958:10)
+at commitHookEffectListMount (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:23145:26)
+at commitPassiveMountOnFiber (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24921:13)
+at commitPassiveMountEffects_complete (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24886:9)
+at commitPassiveMountEffects_begin (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24873:7)
+at commitPassiveMountEffects (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:24861:3)
+at flushPassiveEffectsImpl (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:27034:3)
+at flushPassiveEffects (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:26979:14)
+at eval (webpack-internal:///(pages-dir-browser)/../../../node_modules/react-dom/cjs/react-dom.development.js:26764:9)
+at workLoop (webpack-internal:///(pages-dir-browser)/../../../node_modules/scheduler/cjs/scheduler.development.js:266:34)
+at flushWork (webpack-internal:///(pages-dir-browser)/../../../node_modules/scheduler/cjs/scheduler.development.js:239:14)
+at MessagePort.performWorkUntilDeadline (webpack-internal:///(pages-dir-browser)/../../../node_modules/scheduler/cjs/scheduler.development.js:533:21)

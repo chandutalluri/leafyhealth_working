@@ -1,0 +1,17 @@
+{
+  "name": "@leafyhealth/customer-service-db",
+  "private": true,
+  "scripts": {
+    "db:generate": "drizzle-kit generate:pg",
+    "db:migrate": "drizzle-kit push:pg",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.29.0",
+    "drizzle-kit": "^0.20.0",
+    "pg": "^8.11.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.10.0"
+  }
+}
