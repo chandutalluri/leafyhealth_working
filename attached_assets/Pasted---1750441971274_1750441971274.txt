@@ -1,0 +1,231 @@
+
+      /////////////////////
+   ///////////////////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////        Curious and driven?
+  ///////////////@@@@@@@///////        Work with us!
+  ///////////////@@@@@@@///////
+  ///////////////@@@@@@@///////        https://join.replit.com/hack.with.us
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@#//////////////
+   ///////////////////////////
+      /////////////////////
+      
+_app-95c183efb4f2b5df.js:38 [LaunchDarkly] LaunchDarkly client initialized
+1748667421694_881f28aaaddef4f3a58fc73d393c5916.png:1 
+            
+            
+           Failed to load resource: the server responded with a status of 403 ()Understand this error
+10WARNING: Too many active WebGL contexts. Oldest context will be lost.Understand this warning
+_app-95c183efb4f2b5df.js:38 webglcontextlost event received
+38Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.Understand this error
+framework-9432d335c9e74d77.js:1 Unrecognized feature: 'ambient-light-sensor'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+framework-9432d335c9e74d77.js:1 Unrecognized feature: 'battery'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+framework-9432d335c9e74d77.js:1 Unrecognized feature: 'execution-while-not-rendered'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+framework-9432d335c9e74d77.js:1 Unrecognized feature: 'execution-while-out-of-viewport'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+framework-9432d335c9e74d77.js:1 Unrecognized feature: 'layout-animations'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+framework-9432d335c9e74d77.js:1 Unrecognized feature: 'legacy-image-formats'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+framework-9432d335c9e74d77.js:1 Unrecognized feature: 'navigation-override'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+framework-9432d335c9e74d77.js:1 Unrecognized feature: 'oversized-images'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+framework-9432d335c9e74d77.js:1 Unrecognized feature: 'publickey-credentials'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+framework-9432d335c9e74d77.js:1 Unrecognized feature: 'speaker-selection'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+framework-9432d335c9e74d77.js:1 Unrecognized feature: 'unoptimized-images'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+framework-9432d335c9e74d77.js:1 Unrecognized feature: 'unsized-media'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+framework-9432d335c9e74d77.js:1 Unrecognized feature: 'pointer-lock'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+framework-9432d335c9e74d77.js:1 Allow attribute will take precedence over 'allowfullscreen'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+framework-9432d335c9e74d77.js:1 Allow attribute will take precedence over 'allowpaymentrequest'.
+_ @ framework-9432d335c9e74d77.js:1Understand this warning
+_app-95c183efb4f2b5df.js:38 webgl context not restored; firing onContextLoss
+(anonymous) @ _app-95c183efb4f2b5df.js:38Understand this warning
+analytics.tiktok.com/i18n/pixel/events.js?sdkid=D004GE3C77U8PIVDSDJG&lib=ttq:1 
+            
+            
+           Failed to load resource: net::ERR_CONNECTION_TIMED_OUTUnderstand this error
+leafyforworkingwork:1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+workspace_iframe.html:32 Unrecognized feature: 'ambient-light-sensor'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'battery'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'execution-while-not-rendered'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'execution-while-out-of-viewport'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'layout-animations'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'legacy-image-formats'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'navigation-override'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'oversized-images'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'publickey-credentials'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'speaker-selection'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'unoptimized-images'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'unsized-media'.Understand this warning
+workspace_iframe.html:32 Allow attribute will take precedence over 'allowfullscreen'.Understand this warning
+workspace_iframe.html:32 Allow attribute will take precedence over 'allowpaymentrequest'.Understand this warning
+Console.js:61 [HMR] connected
+Console.js:61 [Fast Refresh] done in 1750441879051ms
+Console.js:61 Attempting login to: https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:8080/api/auth/internal/login
+login:1 Access to fetch at 'https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:8080/api/auth/internal/login' from origin 'https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:8080/api/auth/internal/login:1 
+            
+            
+           Failed to load resource: net::ERR_FAILEDUnderstand this error
+Console.js:61 Login error: TypeError: Failed to fetch
+    at window.fetch (Network.js:219:37)
+    at loginInternal (authStore.ts:56:34)
+    at handleSubmit (login.tsx:34:27)
+    at HTMLUnknownElement.callCallback (react-dom.development.js:4164:14)
+    at Object.invokeGuardedCallbackDev (react-dom.development.js:4213:16)
+    at invokeGuardedCallback (react-dom.development.js:4277:31)
+    at invokeGuardedCallbackAndCatchFirstError (react-dom.development.js:4291:25)
+    at executeDispatch (react-dom.development.js:9041:3)
+    at processDispatchQueueItemsInOrder (react-dom.development.js:9073:7)
+    at processDispatchQueue (react-dom.development.js:9086:5)
+    at dispatchEventsForPlugins (react-dom.development.js:9097:3)
+    at eval (react-dom.development.js:9288:12)
+    at batchedUpdates$1 (react-dom.development.js:26135:12)
+    at batchedUpdates (react-dom.development.js:3991:12)
+    at dispatchEventForPluginEventSystem (react-dom.development.js:9287:3)
+    at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (react-dom.development.js:6465:5)
+    at dispatchEvent (react-dom.development.js:6457:5)
+    at dispatchDiscreteEvent (react-dom.development.js:6430:5)
+Mt.forEach.n.<computed> @ Console.js:61Understand this error
+Network.js:219 
+            
+            
+           
+        
+       Uncaught (in promise) TypeError: Failed to fetch
+    at window.fetch (Network.js:219:37)
+    at loginInternal (authStore.ts:56:34)
+    at handleSubmit (login.tsx:34:27)
+    at HTMLUnknownElement.callCallback (react-dom.development.js:4164:14)
+    at Object.invokeGuardedCallbackDev (react-dom.development.js:4213:16)
+    at invokeGuardedCallback (react-dom.development.js:4277:31)
+    at invokeGuardedCallbackAndCatchFirstError (react-dom.development.js:4291:25)
+    at executeDispatch (react-dom.development.js:9041:3)
+    at processDispatchQueueItemsInOrder (react-dom.development.js:9073:7)
+    at processDispatchQueue (react-dom.development.js:9086:5)
+    at dispatchEventsForPlugins (react-dom.development.js:9097:3)
+    at eval (react-dom.development.js:9288:12)
+    at batchedUpdates$1 (react-dom.development.js:26135:12)
+    at batchedUpdates (react-dom.development.js:3991:12)
+    at dispatchEventForPluginEventSystem (react-dom.development.js:9287:3)
+    at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (react-dom.development.js:6465:5)
+    at dispatchEvent (react-dom.development.js:6457:5)
+    at dispatchDiscreteEvent (react-dom.development.js:6430:5)Understand this error
+Console.js:61 Attempting login to: https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:8080/api/auth/internal/login
+login:1 Access to fetch at 'https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:8080/api/auth/internal/login' from origin 'https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+authStore.ts:56 
+            
+            
+           POST https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:8080/api/auth/internal/login net::ERR_FAILED
+window.fetch @ Network.js:219
+loginInternal @ authStore.ts:56
+handleSubmit @ login.tsx:34
+callCallback @ react-dom.development.js:4164
+invokeGuardedCallbackDev @ react-dom.development.js:4213
+invokeGuardedCallback @ react-dom.development.js:4277
+invokeGuardedCallbackAndCatchFirstError @ react-dom.development.js:4291
+executeDispatch @ react-dom.development.js:9041
+processDispatchQueueItemsInOrder @ react-dom.development.js:9073
+processDispatchQueue @ react-dom.development.js:9086
+dispatchEventsForPlugins @ react-dom.development.js:9097
+eval @ react-dom.development.js:9288
+batchedUpdates$1 @ react-dom.development.js:26135
+batchedUpdates @ react-dom.development.js:3991
+dispatchEventForPluginEventSystem @ react-dom.development.js:9287
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ react-dom.development.js:6465
+dispatchEvent @ react-dom.development.js:6457
+dispatchDiscreteEvent @ react-dom.development.js:6430Understand this error
+Console.js:61 Login error: TypeError: Failed to fetch
+    at window.fetch (Network.js:219:37)
+    at loginInternal (authStore.ts:56:34)
+    at handleSubmit (login.tsx:34:27)
+    at HTMLUnknownElement.callCallback (react-dom.development.js:4164:14)
+    at Object.invokeGuardedCallbackDev (react-dom.development.js:4213:16)
+    at invokeGuardedCallback (react-dom.development.js:4277:31)
+    at invokeGuardedCallbackAndCatchFirstError (react-dom.development.js:4291:25)
+    at executeDispatch (react-dom.development.js:9041:3)
+    at processDispatchQueueItemsInOrder (react-dom.development.js:9073:7)
+    at processDispatchQueue (react-dom.development.js:9086:5)
+    at dispatchEventsForPlugins (react-dom.development.js:9097:3)
+    at eval (react-dom.development.js:9288:12)
+    at batchedUpdates$1 (react-dom.development.js:26135:12)
+    at batchedUpdates (react-dom.development.js:3991:12)
+    at dispatchEventForPluginEventSystem (react-dom.development.js:9287:3)
+    at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (react-dom.development.js:6465:5)
+    at dispatchEvent (react-dom.development.js:6457:5)
+    at dispatchDiscreteEvent (react-dom.development.js:6430:5)
+Mt.forEach.n.<computed> @ Console.js:61
+nextJsHandleConsoleError @ client.js:82
+loginInternal @ authStore.ts:87
+await in loginInternal
+handleSubmit @ login.tsx:34
+callCallback @ react-dom.development.js:4164
+invokeGuardedCallbackDev @ react-dom.development.js:4213
+invokeGuardedCallback @ react-dom.development.js:4277
+invokeGuardedCallbackAndCatchFirstError @ react-dom.development.js:4291
+executeDispatch @ react-dom.development.js:9041
+processDispatchQueueItemsInOrder @ react-dom.development.js:9073
+processDispatchQueue @ react-dom.development.js:9086
+dispatchEventsForPlugins @ react-dom.development.js:9097
+eval @ react-dom.development.js:9288
+batchedUpdates$1 @ react-dom.development.js:26135
+batchedUpdates @ react-dom.development.js:3991
+dispatchEventForPluginEventSystem @ react-dom.development.js:9287
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ react-dom.development.js:6465
+dispatchEvent @ react-dom.development.js:6457
+dispatchDiscreteEvent @ react-dom.development.js:6430Understand this error
+Network.js:219 
+            
+            
+           
+        
+       Uncaught (in promise) TypeError: Failed to fetch
+    at window.fetch (Network.js:219:37)
+    at loginInternal (authStore.ts:56:34)
+    at handleSubmit (login.tsx:34:27)
+    at HTMLUnknownElement.callCallback (react-dom.development.js:4164:14)
+    at Object.invokeGuardedCallbackDev (react-dom.development.js:4213:16)
+    at invokeGuardedCallback (react-dom.development.js:4277:31)
+    at invokeGuardedCallbackAndCatchFirstError (react-dom.development.js:4291:25)
+    at executeDispatch (react-dom.development.js:9041:3)
+    at processDispatchQueueItemsInOrder (react-dom.development.js:9073:7)
+    at processDispatchQueue (react-dom.development.js:9086:5)
+    at dispatchEventsForPlugins (react-dom.development.js:9097:3)
+    at eval (react-dom.development.js:9288:12)
+    at batchedUpdates$1 (react-dom.development.js:26135:12)
+    at batchedUpdates (react-dom.development.js:3991:12)
+    at dispatchEventForPluginEventSystem (react-dom.development.js:9287:3)
+    at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (react-dom.development.js:6465:5)
+    at dispatchEvent (react-dom.development.js:6457:5)
+    at dispatchDiscreteEvent (react-dom.development.js:6430:5)
+window.fetch @ Network.js:219
+loginInternal @ authStore.ts:56
+handleSubmit @ login.tsx:34
+callCallback @ react-dom.development.js:4164
+invokeGuardedCallbackDev @ react-dom.development.js:4213
+invokeGuardedCallback @ react-dom.development.js:4277
+invokeGuardedCallbackAndCatchFirstError @ react-dom.development.js:4291
+executeDispatch @ react-dom.development.js:9041
+processDispatchQueueItemsInOrder @ react-dom.development.js:9073
+processDispatchQueue @ react-dom.development.js:9086
+dispatchEventsForPlugins @ react-dom.development.js:9097
+eval @ react-dom.development.js:9288
+batchedUpdates$1 @ react-dom.development.js:26135
+batchedUpdates @ react-dom.development.js:3991
+dispatchEventForPluginEventSystem @ react-dom.development.js:9287
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ react-dom.development.js:6465
+dispatchEvent @ react-dom.development.js:6457
+dispatchDiscreteEvent @ react-dom.development.js:6430Understand this error

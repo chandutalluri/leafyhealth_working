@@ -1,0 +1,108 @@
+Here's a migration plan to remove all pages/api/*.ts proxy endpoints from your frontend apps and route everything exclusively through the centralized gateway (http://localhost:8080) as defined in your architecture.
+✅ MIGRATION PLAN: Remove Next.js API Proxy Endpoints
+🎯 Goal:
+
+    Eliminate frontend/apps/*/pages/api/*.ts files (currently 37 across all apps)
+
+    Reconnect frontend to centralized gateway (http://localhost:8080)
+
+    Enforce real API calls from frontend via fetch() or apiClient.ts
+
+    Preserve SSR, caching, and error handling
+
+📍 Step 1: Audit All Proxy Files
+
+Run this to list all pages/api/ proxies:
+
+find frontend/apps -type f -path "*/pages/api/*.ts"
+
+Make a list like:
+
+frontend/apps/ecommerce-web/src/pages/api/products.ts
+frontend/apps/admin-portal/src/pages/api/branches.ts
+frontend/apps/super-admin/src/pages/api/users.ts
+...
+
+🔥 Step 2: Delete All pages/api/*.ts Files
+
+Delete them manually or use a script:
+
+find frontend/apps -type f -path "*/pages/api/*.ts" -exec git rm {} \;
+
+    ✅ Commit after this step: chore: removed all frontend proxy API endpoints
+
+🧠 Step 3: Replace Proxy Usage with apiClient
+
+Update frontend data fetching logic in all components:
+
+Before:
+
+// pages/index.tsx
+const res = await fetch('/api/products')
+
+After:
+
+// lib/apiClient.ts
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_GATEWAY || 'http://localhost:8080';
+
+export const apiClient = {
+  async get(path: string) {
+    const res = await fetch(`${API_BASE_URL}${path}`, {
+      headers: {
+        'Authorization': `Bearer ${localStorage.getItem('leafyhealth-auth') || ''}`
+      }
+    });
+    if (!res.ok) throw new Error(`API Error: ${res.status}`);
+    return res.json();
+  }
+}
+
+Then in your pages:
+
+const products = await apiClient.get('/products?branchId=3');
+
+    ✅ Commit after this step: refactor: switched to centralized gateway API calls
+
+🛡 Step 4: Add Gateway Enforcement in README + CI
+
+Add a check-compliance.sh script:
+
+#!/bin/bash
+echo "🔍 Checking for forbidden pages/api proxies..."
+violation=$(find frontend/apps -path "*/pages/api/*.ts")
+if [[ -n "$violation" ]]; then
+  echo "❌ Proxy API files detected:"
+  echo "$violation"
+  exit 1
+else
+  echo "✅ No pages/api violations."
+fi
+
+Optional: Hook into Git pre-commit or GitHub Actions.
+🧪 Step 5: Test Frontend Apps
+
+    ecommerce-web should load /products, /categories, /cart
+
+    admin-portal must load branch dashboard via /branches
+
+    super-admin must authenticate and load cross-branch data
+
+Ensure all requests now hit the gateway at port 8080, not direct ports.
+
+    ✅ Commit after this step: test: verified frontend apps route through gateway
+
+📦 Final Cleanup
+
+Update .env.production and .env.development:
+
+NEXT_PUBLIC_API_GATEWAY=http://localhost:8080
+
+✅ Migration Summary
+Task	Status
+Audit pages/api/ proxies	✅
+Delete all proxy endpoints	✅
+Refactor fetch calls to gateway	✅
+Add compliance script	✅
+Test routing	✅
+Update environment config	✅
+Once this is done, your frontend will fully respect the architecture in README.DEV.md, and routing will be secure, maintainable, and gateway-compliant.

@@ -1,0 +1,122 @@
+✅ FULL 360° PLATFORM REBUILD: Prompt to Reset Replit Architecture
+
+Here’s your bulletproof, senior-level restoration prompt for Replit support or internal rebuild agent:
+
+# 🚨 URGENT: REQUEST FOR 360° FULL PLATFORM NETWORK & FRONTEND REBUILD
+
+### ❗CRITICAL ISSUE
+All five frontend applications on the LeafyHealth platform — `super-admin`, `customer`, `admin`, `mobile`, and `operations` — are **serving blank/errored UIs** despite receiving `200 OK` status from the Unified Gateway.
+
+This is **NOT a networking problem anymore**:
+- Port 5000 is properly bound and externally accessible
+- All API routes (`/api/products`, `/api/branches`, `/api/auth/...`) are responding with real business data
+- All apps return 200 for their root paths
+
+> ✅ Unified Gateway routing is working perfectly  
+> ❌ Frontend UI is broken across all apps
+
+---
+
+### 🧠 ROOT CAUSE HYPOTHESIS
+
+This appears to be one or more of the following:
+
+1. **Invalid hydration lifecycle** between server-side rendering (SSR) and client-side rendering
+2. **Token-based auth** state is stuck in `loading` or is silently failing
+3. **Build artifacts** (e.g., `.next/`, `node_modules`, stale caches) are **corrupted**
+4. **Missing or misapplied environment variables** (e.g., `NEXT_PUBLIC_API_BASE_URL`) during build
+5. **Hot Module Replacement logs (WebSocket errors)** are red herrings — not blocking anything
+
+---
+
+### 🧨 WHAT TO DO: FULL PLATFORM REBUILD (ACTION PLAN)
+
+> Please follow this strictly and completely.
+
+---
+
+#### 🧼 1. CLEAN EVERYTHING
+```bash
+# Inside Replit shell
+rm -rf .next dist node_modules pnpm-lock.yaml
+pnpm install
+pnpm turbo run clean --filter=...
+
+🏗️ 2. BUILD ALL FRONTEND APPS INDIVIDUALLY
+
+cd frontend/apps/super-admin && pnpm build
+cd ../customer && pnpm build
+cd ../admin && pnpm build
+cd ../mobile && pnpm build
+cd ../ops && pnpm build
+
+Make sure .env.production includes:
+
+NEXT_PUBLIC_API_BASE_URL=https://your-domain:5000/api
+NEXT_PUBLIC_GATEWAY_DOMAIN=https://your-domain:5000
+
+🧠 3. FIX AUTH LOADING BLOCK
+
+In authStore.ts and AuthProvider.tsx, add:
+
+useEffect(() => {
+  (async () => {
+    try {
+      await authStore.verifyToken();
+    } catch (err) {
+      authStore.logout();
+    } finally {
+      authStore.finishLoading(); // ✅ UNBLOCK loading state
+    }
+  })();
+}, []);
+
+Timeout fallback:
+
+setTimeout(() => {
+  if (get().loading) set({ loading: false });
+}, 4000);
+
+🛠️ 4. RESET GATEWAY CONFIG
+
+In unified-gateway.ts:
+
+    Make sure app.use(express.static(...)) is pointing to compiled .next/ directories for each frontend
+
+    No wildcard * catch-all routes before static handlers
+
+    Use proper route prefixes (/customer, /admin, etc.)
+
+🔁 5. RESTART ENTIRE STACK
+
+pnpm turbo run dev --filter unified-gateway
+
+Then access:
+
+    /login → ensure it renders
+
+    / → ensure Super Admin shows
+
+    /customer → ensure Customer UI works
+
+    /admin, /mobile, /ops → check UI state
+
+✅ FINAL CHECKLIST
+Task	Status
+Unified Gateway routing	✅ Working
+Backend APIs	✅ Delivering content
+Auth login endpoint	✅ Verified
+Frontend UIs	❌ Broken – need rebuild
+Build artifacts cleaned	⏳ To be done
+Environment variables validated	⏳ To be done
+Token verification on page load	❌ Not resolving
+SSR hydration	❌ Failing silently
+Hot Module Replacement	✅ Ignorable in prod
+🎯 GOAL
+
+    Rebuild frontend → fix loading logic → serve UI successfully from Gateway on port 5000.
+
+Do NOT skip build steps.
+Do NOT depend on Replit Preview if logs show WebSocket or asset load errors — always verify over real browser access.
+
+This platform is ready for production once frontend render is restored. Backend and gateway are fully healthy.

@@ -1,0 +1,12 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <rect x="20" y="20" width="260" height="160" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="10,5"/>
+  <circle cx="150" cy="70" r="20" fill="#e2e8f0"/>
+  <path d="M 130 85 L 150 105 L 170 85" stroke="#94a3b8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <text x="150" y="130" text-anchor="middle" font-family="system-ui" font-size="14" fill="#64748b">
+    LeafyHealth Product
+  </text>
+  <text x="150" y="150" text-anchor="middle" font-family="system-ui" font-size="10" fill="#94a3b8">
+    Organic & Fresh
+  </text>
+</svg>

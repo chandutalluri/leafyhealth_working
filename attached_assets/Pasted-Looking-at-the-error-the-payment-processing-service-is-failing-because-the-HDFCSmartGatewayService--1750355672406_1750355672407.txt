@@ -1,0 +1,58 @@
+Looking at the error, the payment-processing service is failing because the HDFCSmartGatewayService constructor requires 4 parameters (merchantId, terminalId, encryptionKey, isProduction), but NestJS can't resolve these dependencies since they're not properly configured in the dependency injection container.
+
+The issue is in the AppModule where HDFCSmartGatewayService is registered using useClass instead of useFactory, but the service constructor expects specific string parameters that aren't available in the DI container.
+
+Here's the fix:
+
+backend/domains/payment-processing/src/app.module.ts
+You'll also need to add the required environment variables to the payment-processing service's .env file:
+
+backend/domains/payment-processing/.env
+Checkpoint made
+Fix HDFC service dependency injection and add env vars
+10 minutes ago
+•
+Still, I am saying the same error.
+
+MT
+
+forrealbeatz123
+Assistant
+6 minutes ago
+Looking at the error, I can see that the issue persists because the compiled JavaScript files in the dist folder still have the old configuration. The problem is that while we updated the TypeScript source files, the compiled JavaScript files in backend/domains/payment-processing/dist/src/app.module.js still contain the old useClass configuration instead of the useFactory configuration.
+
+The solution is to rebuild the payment-processing service to reflect our changes. Let's clean the dist folder and rebuild:
+
+rm -rf dist && npm run build
+If the build command doesn't exist, let's check what scripts are available and create a simple build process:
+
+npx tsc
+After rebuilding, the service should start correctly with the proper dependency injection configuration using useFactory instead of useClass.
+
+Fuel no change still same issue We have to replay back parabolic issue sets for the Internet This is a long Back issue not have been resolved.
+
+MT
+
+forrealbeatz123
+Assistant
+3 minutes ago
+I can see the payment-processing service is still failing with the same dependency injection issue. The problem is that the build process needs to be run from the correct directory, and we need to ensure the TypeScript files are properly compiled.
+
+Let me fix this by navigating to the payment-processing directory and rebuilding it:
+
+npm run build
+If that doesn't work, let's try a clean build:
+
+rm -rf dist node_modules && npm install && npm run build
+The issue is that the compiled JavaScript files in the dist folder still contain the old dependency injection configuration. The payment-processing service needs to be rebuilt with the updated TypeScript source files that use useFactory instead of useClass for the HDFCSmartGatewayService.
+
+After rebuilding, the service should start correctly with the proper environment variables from the .env file we updated earlier.
+
+Assistant can automatically apply proposed changes to your App. You can enable this behavior in 
+.
+Apply all:
+Run shell command:
+npm run build
+Run shell command:
+rm -rf dist node_modules && npm install && npm run build
+Nothing to commit

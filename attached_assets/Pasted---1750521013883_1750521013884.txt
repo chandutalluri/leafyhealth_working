@@ -1,0 +1,146 @@
+
+      /////////////////////
+   ///////////////////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////        Curious and driven?
+  ///////////////@@@@@@@///////        Work with us!
+  ///////////////@@@@@@@///////
+  ///////////////@@@@@@@///////        https://join.replit.com/hack.with.us
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@#//////////////
+   ///////////////////////////
+      /////////////////////
+      
+_app-6b0089c83b1309ba.js:38 [LaunchDarkly] LaunchDarkly client initialized
+_app-6b0089c83b1309ba.js:38 WARN: A component changed from uncontrolled to controlled.
+(anonymous) @ _app-6b0089c83b1309ba.js:38Understand this warning
+_app-6b0089c83b1309ba.js:38 WARN: A component changed from controlled to uncontrolled.
+(anonymous) @ _app-6b0089c83b1309ba.js:38Understand this warning
+_app-6b0089c83b1309ba.js:38 WARN: A component changed from uncontrolled to controlled.
+(anonymous) @ _app-6b0089c83b1309ba.js:38Understand this warning
+_app-6b0089c83b1309ba.js:38 Uncaught RangeError: Invalid change range 0 to 7 (in doc of length 6)
+    at t (4357-e273676b706b93d5.js:1:77387)
+    at I.of (4357-e273676b706b93d5.js:1:77599)
+    at tm.changes (4357-e273676b706b93d5.js:1:95294)
+    at 275e5802-8716855e474ed2eb.js:1:59878
+    at h (275e5802-8716855e474ed2eb.js:1:60941)
+    at eg (275e5802-8716855e474ed2eb.js:1:61017)
+    at handlers.textupdate (275e5802-8716855e474ed2eb.js:1:118562)
+    at EditContext.n (_app-6b0089c83b1309ba.js:38:2959)Understand this error
+1043[Report Only] Refused to connect to '<URL>' because it violates the following Content Security Policy directive: "connect-src 'none'".
+
+30Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.Understand this error
+leafyforworkingwork:1 Unrecognized feature: 'ambient-light-sensor'.Understand this warning
+leafyforworkingwork:1 Unrecognized feature: 'battery'.Understand this warning
+leafyforworkingwork:1 Unrecognized feature: 'execution-while-not-rendered'.Understand this warning
+leafyforworkingwork:1 Unrecognized feature: 'execution-while-out-of-viewport'.Understand this warning
+leafyforworkingwork:1 Unrecognized feature: 'layout-animations'.Understand this warning
+leafyforworkingwork:1 Unrecognized feature: 'legacy-image-formats'.Understand this warning
+leafyforworkingwork:1 Unrecognized feature: 'navigation-override'.Understand this warning
+leafyforworkingwork:1 Unrecognized feature: 'oversized-images'.Understand this warning
+leafyforworkingwork:1 Unrecognized feature: 'publickey-credentials'.Understand this warning
+leafyforworkingwork:1 Unrecognized feature: 'speaker-selection'.Understand this warning
+leafyforworkingwork:1 Unrecognized feature: 'unoptimized-images'.Understand this warning
+leafyforworkingwork:1 Unrecognized feature: 'unsized-media'.Understand this warning
+leafyforworkingwork:1 Unrecognized feature: 'pointer-lock'.Understand this warning
+leafyforworkingwork:1 Allow attribute will take precedence over 'allowfullscreen'.Understand this warning
+leafyforworkingwork:1 Allow attribute will take precedence over 'allowpaymentrequest'.Understand this warning
+leafyforworkingwork:1 Access to fetch at 'https://sp.replit.com/v1/m' from origin 'https://replit.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+sp.replit.com/v1/m:1 
+            
+            
+           Failed to load resource: net::ERR_FAILEDUnderstand this error
+_app-6b0089c83b1309ba.js:38 Error sending segment performance metrics TypeError: Failed to fetch
+    at _app-6b0089c83b1309ba.js:38:9046
+    at o (sdk.min.js:1:23763)
+    at t.<anonymous> (remote-metrics.ts:138:12)
+    at tslib.es6.js:103:23
+    at Object.next (tslib.es6.js:108:37)
+    at tslib.es6.js:80:8
+    at new Promise (<anonymous>)
+    at u (tslib.es6.js:72:27)
+    at i.148.t.send (sdk.min.js:1:22021)
+    at t.<anonymous> (remote-metrics.ts:125:16)
+    at tslib.es6.js:103:23
+    at Object.next (tslib.es6.js:108:37)
+    at tslib.es6.js:80:8
+    at new Promise (<anonymous>)
+    at u (tslib.es6.js:72:27)
+    at t.flush (sdk.min.js:1:21754)
+    at l (remote-metrics.ts:83:14)
+    at n (_app-6b0089c83b1309ba.js:38:2959)
+(anonymous) @ _app-6b0089c83b1309ba.js:38Understand this error
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:32 Unrecognized feature: 'ambient-light-sensor'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:32 Unrecognized feature: 'battery'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:32 Unrecognized feature: 'execution-while-not-rendered'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:32 Unrecognized feature: 'execution-while-out-of-viewport'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:32 Unrecognized feature: 'layout-animations'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:32 Unrecognized feature: 'legacy-image-formats'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:32 Unrecognized feature: 'navigation-override'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:32 Unrecognized feature: 'oversized-images'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:32 Unrecognized feature: 'publickey-credentials'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:32 Unrecognized feature: 'speaker-selection'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:32 Unrecognized feature: 'unoptimized-images'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:32 Unrecognized feature: 'unsized-media'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:32 Allow attribute will take precedence over 'allowfullscreen'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:32 Allow attribute will take precedence over 'allowpaymentrequest'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7q6%3A:142 Refused to load the script 'https://replit.com/public/js/beacon.js' because it violates the following Content Security Policy directive: "script-src 'self' 'unsafe-eval' 'unsafe-inline' *.replit.dev *.replit.app". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+onIframeLoad @ 61915ea0-a177-4649-b…F&id=%3Ar7q6%3A:142Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ eruda.js:2Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ eruda.js:2Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ eruda.js:2Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ eruda.js:2Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ eruda.js:2Understand this error
+workspace_iframe.html:142 Refused to load the script 'https://replit.com/public/js/beacon.js' because it violates the following Content Security Policy directive: "script-src 'self' 'unsafe-eval' 'unsafe-inline' *.replit.dev *.replit.app". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+onIframeLoad @ workspace_iframe.html?initialPath=%2Flogin&id=%3Ar7q6%3A:142Understand this error
+3761 log entries are not shown.Understand this warning
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7st%3A:32 Unrecognized feature: 'ambient-light-sensor'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7st%3A:32 Unrecognized feature: 'battery'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7st%3A:32 Unrecognized feature: 'execution-while-not-rendered'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7st%3A:32 Unrecognized feature: 'execution-while-out-of-viewport'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7st%3A:32 Unrecognized feature: 'layout-animations'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7st%3A:32 Unrecognized feature: 'legacy-image-formats'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7st%3A:32 Unrecognized feature: 'navigation-override'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7st%3A:32 Unrecognized feature: 'oversized-images'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7st%3A:32 Unrecognized feature: 'publickey-credentials'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7st%3A:32 Unrecognized feature: 'speaker-selection'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7st%3A:32 Unrecognized feature: 'unoptimized-images'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7st%3A:32 Unrecognized feature: 'unsized-media'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7st%3A:32 Allow attribute will take precedence over 'allowfullscreen'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7st%3A:32 Allow attribute will take precedence over 'allowpaymentrequest'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:32 Unrecognized feature: 'ambient-light-sensor'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:32 Unrecognized feature: 'battery'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:32 Unrecognized feature: 'execution-while-not-rendered'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:32 Unrecognized feature: 'execution-while-out-of-viewport'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:32 Unrecognized feature: 'layout-animations'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:32 Unrecognized feature: 'legacy-image-formats'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:32 Unrecognized feature: 'navigation-override'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:32 Unrecognized feature: 'oversized-images'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:32 Unrecognized feature: 'publickey-credentials'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:32 Unrecognized feature: 'speaker-selection'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:32 Unrecognized feature: 'unoptimized-images'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:32 Unrecognized feature: 'unsized-media'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:32 Allow attribute will take precedence over 'allowfullscreen'.Understand this warning
+61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:32 Allow attribute will take precedence over 'allowpaymentrequest'.Understand this warning
+workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:151 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/ 502 (Bad Gateway)
+(anonymous) @ workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:151Understand this error
+workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:142 Refused to load the script 'https://replit.com/public/js/beacon.js' because it violates the following Content Security Policy directive: "script-src 'self' 'unsafe-eval' 'unsafe-inline' *.replit.dev *.replit.app". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+
+onIframeLoad @ workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:142Understand this error

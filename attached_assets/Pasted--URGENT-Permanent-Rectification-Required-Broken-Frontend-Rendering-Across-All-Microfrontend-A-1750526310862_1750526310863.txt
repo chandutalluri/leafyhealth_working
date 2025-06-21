@@ -1,0 +1,68 @@
+# 🚨 URGENT: Permanent Rectification Required – Broken Frontend Rendering Across All Microfrontend Applications
+
+## ✅ CONTEXT
+
+This is a fully working production-grade multi-frontend platform, deployed behind a unified gateway on port 5000, following Replit’s documented best practices.
+
+✅ Port 5000 is correctly bound and externally exposed  
+✅ All API endpoints respond with real business data (Telugu groceries, branches, etc.)  
+✅ All route paths return HTTP 200 (e.g., `/`, `/customer`, `/admin`, `/mobile`, `/ops`)  
+✅ Authentication is functional — login endpoint returns token  
+✅ 26 microservices are healthy and routed properly  
+❌ **All five frontend apps are blank or stuck at loading screen despite 200 responses**
+
+---
+
+## ❗CORE ISSUE
+
+All frontend applications are **stuck due to frontend rendering failures**, despite healthy networking.
+
+### 💡 Observed Symptoms
+- No visible dashboard — stuck at spinners or blank pages
+- Console logs show: `Verifying token, current token: none` repeatedly
+- UI never advances even after login
+- `/_next/webpack-hmr` WebSocket failures on all pages (irrelevant to production)
+- Static assets and routes resolve correctly, but hydration is broken
+
+---
+
+## 🧠 ROOT CAUSE ANALYSIS
+
+1. **Token-based authentication logic** is stuck in `loading: true` due to missing or unverified tokens
+2. **Next.js SSR hydration mismatch** occurs because client-side state is never resolving (no fallback UI)
+3. **Hot Module Replacement (HMR) WebSocket** fails in Replit — but is misinterpreted as a functional failure
+4. **Frontend apps are not fully rebuilt after gateway and auth logic changes**
+5. **Browser receives 200 but renders nothing** due to silent frontend logic error, NOT networking
+
+---
+
+## 🛠️ ACTION REQUIRED FROM REPLIT
+
+Please execute a **full, clean, environment-aware rebuild of the LeafyHealth platform**. The platform is already using a single exposed port (5000) and correctly routing traffic. You must now address frontend rendering issues by resetting the entire state:
+
+---
+
+### ✅ REQUIRED REPLIT REBUILD STEPS (DO NOT SKIP)
+
+```bash
+# 1. CLEAN WORKSPACE COMPLETELY
+rm -rf node_modules .next dist pnpm-lock.yaml
+pnpm install
+
+# 2. BUILD FRONTEND APPLICATIONS INDIVIDUALLY
+cd frontend/apps/super-admin && pnpm build
+cd ../customer && pnpm build
+cd ../admin && pnpm build
+cd ../mobile && pnpm build
+cd ../ops && pnpm build
+
+# 3. ENSURE ENVIRONMENT VARIABLES EXIST
+# .env.production
+NEXT_PUBLIC_API_BASE_URL=https://your-domain:5000/api
+NEXT_PUBLIC_GATEWAY_DOMAIN=https://your-domain:5000
+
+# 4. FIX FRONTEND RENDER LOCK IN authStore.ts
+# (Unblock loading state if no token exists — do NOT keep it stuck)
+
+# 5. SERVE FRONTEND FROM COMPILED BUILD, NOT DEV MODE
+pnpm start unified-gateway

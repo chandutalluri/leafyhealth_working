@@ -1,0 +1,23 @@
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+authStore.ts:52 Attempting login to: /api/auth/internal/login
+authStore.ts:53 Request payload: {email: 'global.admin@leafyhealth.com', password: '***'}email: "global.admin@leafyhealth.com"password: "***"[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: (...)get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+authStore.ts:65 Response status: 200 OK
+authStore.ts:66 Response headers: {access-control-allow-credentials: 'true', access-control-allow-headers: 'Content-Type, Authorization, X-Requested-With, Accept', access-control-allow-methods: 'GET, POST, PUT, DELETE, PATCH, OPTIONS', access-control-allow-origin: 'https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000', access-control-max-age: '86400', …}access-control-allow-credentials: "true"access-control-allow-headers: "Content-Type, Authorization, X-Requested-With, Accept"access-control-allow-methods: "GET, POST, PUT, DELETE, PATCH, OPTIONS"access-control-allow-origin: "https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000"access-control-max-age: "86400"content-length: "584"content-security-policy: "default-src 'self';style-src 'self' 'unsafe-inline';script-src 'self';img-src 'self' data: https:;base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"content-type: "application/json; charset=utf-8"cross-origin-opener-policy: "same-origin"cross-origin-resource-policy: "same-origin"date: "Sat, 21 Jun 2025 12:00:06 GMT"etag: "W/\"248-IJDm8YN5eQSGwGAmZ2gQbujxyJc\""origin-agent-cluster: "?1"ratelimit-limit: "5"ratelimit-policy: "5;w=900"ratelimit-remaining: "4"ratelimit-reset: "900"referrer-policy: "no-referrer"replit-cluster: "riker"strict-transport-security: "max-age=31536000; includeSubDomains; preload"vary: "Origin, Accept-Encoding"x-content-type-options: "nosniff"x-dns-prefetch-control: "off"x-download-options: "noopen"x-frame-options: "SAMEORIGIN"x-permitted-cross-domain-policies: "none"x-robots-tag: "none, noindex, noarchive, nofollow, nositelinkssearchbox, noimageindex, none, noindex, noarchive, nofollow, nositelinkssearchbox, noimageindex"x-xss-protection: "0"[[Prototype]]: Object
+leafyhealthlogo_copy_25991930-2a1c-4593-95db-1965eea84310.png:1 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/api/image-management/serve/leafyhealthlogo_copy_25991930-2a1c-4593-95db-1965eea84310.png 404 (Not Found)
+Image
+setValueForProperty @ react-dom.development.js:855
+setInitialDOMProperties @ react-dom.development.js:9720
+setInitialProperties @ react-dom.development.js:9921
+finalizeInitialChildren @ react-dom.development.js:10950
+completeWork @ react-dom.development.js:22188
+completeUnitOfWork @ react-dom.development.js:26591
+performUnitOfWork @ react-dom.development.js:26563
+workLoopConcurrent @ react-dom.development.js:26538
+renderRootConcurrent @ react-dom.development.js:26500
+performConcurrentWorkOnRoot @ react-dom.development.js:25733
+workLoop @ scheduler.development.js:266
+flushWork @ scheduler.development.js:239
+performWorkUntilDeadline @ scheduler.development.js:533Understand this error

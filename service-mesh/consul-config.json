@@ -1,0 +1,67 @@
+{
+  "datacenter": "leafyhealth-dc",
+  "data_dir": "/tmp/consul/data",
+  "log_level": "INFO",
+  "server": true,
+  "bootstrap_expect": 1,
+  "bind_addr": "127.0.0.1",
+  "client_addr": "127.0.0.1",
+  "ui_config": {
+    "enabled": false
+  },
+  "connect": {
+    "enabled": true
+  },
+  "ports": {
+    "grpc": 8502,
+    "http": 8500,
+    "https": -1,
+    "dns": 8600
+  },
+  "acl": {
+    "enabled": false,
+    "default_policy": "allow"
+  },
+  "services": [
+    {
+      "name": "identity-access",
+      "port": 3010,
+      "connect": { "sidecar_service": {} }
+    },
+    {
+      "name": "user-role-management", 
+      "port": 3011,
+      "connect": { "sidecar_service": {} }
+    },
+    {
+      "name": "catalog-management",
+      "port": 3020,
+      "connect": { "sidecar_service": {} }
+    },
+    {
+      "name": "inventory-management",
+      "port": 3021,
+      "connect": { "sidecar_service": {} }
+    },
+    {
+      "name": "order-management",
+      "port": 3022,
+      "connect": { "sidecar_service": {} }
+    },
+    {
+      "name": "payment-processing",
+      "port": 3023,
+      "connect": { "sidecar_service": {} }
+    },
+    {
+      "name": "notification-service",
+      "port": 3024,
+      "connect": { "sidecar_service": {} }
+    },
+    {
+      "name": "customer-service",
+      "port": 3031,
+      "connect": { "sidecar_service": {} }
+    }
+  ]
+}

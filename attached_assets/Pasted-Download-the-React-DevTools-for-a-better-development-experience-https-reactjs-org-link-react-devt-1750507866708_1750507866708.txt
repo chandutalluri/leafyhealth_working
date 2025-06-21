@@ -1,0 +1,102 @@
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+ProductEcosystemHub.tsx:49 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/api/direct-data/products 404 (Not Found)
+fetchProductData @ ProductEcosystemHub.tsx:49
+ProductEcosystemHub.useEffect @ ProductEcosystemHub.tsx:41
+commitHookEffectListMount @ react-dom.development.js:23145
+commitPassiveMountOnFiber @ react-dom.development.js:24921
+commitPassiveMountEffects_complete @ react-dom.development.js:24886
+commitPassiveMountEffects_begin @ react-dom.development.js:24873
+commitPassiveMountEffects @ react-dom.development.js:24861
+flushPassiveEffectsImpl @ react-dom.development.js:27034
+flushPassiveEffects @ react-dom.development.js:26979
+commitRootImpl @ react-dom.development.js:26930
+commitRoot @ react-dom.development.js:26677
+performSyncWorkOnRoot @ react-dom.development.js:26112
+flushSyncCallbacks @ react-dom.development.js:12042
+eval @ react-dom.development.js:25646Understand this error
+leafyhealthlogo_copy_25991930-2a1c-4593-95db-1965eea84310.png:1 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/api/image-management/serve/leafyhealthlogo_copy_25991930-2a1c-4593-95db-1965eea84310.png 404 (Not Found)Understand this error
+ProductEcosystemHub.tsx:56 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/api/direct-data/inventory/alerts 404 (Not Found)
+fetchProductData @ ProductEcosystemHub.tsx:56
+await in fetchProductData
+ProductEcosystemHub.useEffect @ ProductEcosystemHub.tsx:41
+commitHookEffectListMount @ react-dom.development.js:23145
+commitPassiveMountOnFiber @ react-dom.development.js:24921
+commitPassiveMountEffects_complete @ react-dom.development.js:24886
+commitPassiveMountEffects_begin @ react-dom.development.js:24873
+commitPassiveMountEffects @ react-dom.development.js:24861
+flushPassiveEffectsImpl @ react-dom.development.js:27034
+flushPassiveEffects @ react-dom.development.js:26979
+commitRootImpl @ react-dom.development.js:26930
+commitRoot @ react-dom.development.js:26677
+performSyncWorkOnRoot @ react-dom.development.js:26112
+flushSyncCallbacks @ react-dom.development.js:12042
+eval @ react-dom.development.js:25646Understand this error
+OrderOperationsCenter.tsx:35 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/api/direct-data/orders 404 (Not Found)
+fetchOrderData @ OrderOperationsCenter.tsx:35
+OrderOperationsCenter.useEffect @ OrderOperationsCenter.tsx:29
+commitHookEffectListMount @ react-dom.development.js:23145
+commitPassiveMountOnFiber @ react-dom.development.js:24921
+commitPassiveMountEffects_complete @ react-dom.development.js:24886
+commitPassiveMountEffects_begin @ react-dom.development.js:24873
+commitPassiveMountEffects @ react-dom.development.js:24861
+flushPassiveEffectsImpl @ react-dom.development.js:27034
+flushPassiveEffects @ react-dom.development.js:26979
+commitRootImpl @ react-dom.development.js:26930
+commitRoot @ react-dom.development.js:26677
+performSyncWorkOnRoot @ react-dom.development.js:26112
+flushSyncCallbacks @ react-dom.development.js:12042
+eval @ react-dom.development.js:25646Understand this error
+ProductEcosystemHub.tsx:49 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/api/direct-data/products 404 (Not Found)
+fetchProductData @ ProductEcosystemHub.tsx:49
+ProductEcosystemHub.useEffect @ ProductEcosystemHub.tsx:41
+commitHookEffectListMount @ react-dom.development.js:23145
+commitPassiveMountOnFiber @ react-dom.development.js:24921
+commitPassiveMountEffects_complete @ react-dom.development.js:24886
+commitPassiveMountEffects_begin @ react-dom.development.js:24873
+commitPassiveMountEffects @ react-dom.development.js:24861
+flushPassiveEffectsImpl @ react-dom.development.js:27034
+flushPassiveEffects @ react-dom.development.js:26979
+commitRootImpl @ react-dom.development.js:26930
+commitRoot @ react-dom.development.js:26677
+performSyncWorkOnRoot @ react-dom.development.js:26112
+flushSyncCallbacks @ react-dom.development.js:12042
+eval @ react-dom.development.js:25646Understand this error
+ProductEcosystemHub.tsx:56 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/api/direct-data/inventory/alerts 404 (Not Found)
+fetchProductData @ ProductEcosystemHub.tsx:56
+await in fetchProductData
+ProductEcosystemHub.useEffect @ ProductEcosystemHub.tsx:41
+commitHookEffectListMount @ react-dom.development.js:23145
+commitPassiveMountOnFiber @ react-dom.development.js:24921
+commitPassiveMountEffects_complete @ react-dom.development.js:24886
+commitPassiveMountEffects_begin @ react-dom.development.js:24873
+commitPassiveMountEffects @ react-dom.development.js:24861
+flushPassiveEffectsImpl @ react-dom.development.js:27034
+flushPassiveEffects @ react-dom.development.js:26979
+commitRootImpl @ react-dom.development.js:26930
+commitRoot @ react-dom.development.js:26677
+performSyncWorkOnRoot @ react-dom.development.js:26112
+flushSyncCallbacks @ react-dom.development.js:12042
+eval @ react-dom.development.js:25646Understand this error
+websocket.js:85 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+init @ websocket.js:85
+connectHMR @ websocket.js:91
+pageBootstrap @ page-bootstrap.js:25
+eval @ next-dev.js:24Understand this error

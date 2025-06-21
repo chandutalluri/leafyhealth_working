@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  leafyhealth-gateway:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+      - SESSION_SECRET=${SESSION_SECRET}
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  leafyhealth-db:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_DB=leafyhealth
+      - POSTGRES_USER=${PGUSER}
+      - POSTGRES_PASSWORD=${PGPASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./PRODUCTION_LEAFYHEALTH_DATABASE_COMPLETE.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - leafyhealth-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${PGUSER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  leafyhealth-network:
+    driver: bridge
+
+volumes:
+  postgres_data:

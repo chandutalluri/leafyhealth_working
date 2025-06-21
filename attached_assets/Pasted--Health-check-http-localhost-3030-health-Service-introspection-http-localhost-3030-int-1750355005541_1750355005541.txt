@@ -1,0 +1,43 @@
+🏥 Health check: http://localhost:3030/health
+🔍 Service introspection: http://localhost:3030/__introspect
+🚀 Starting payment-processing on port 3031...
+[payment-processing] [Nest] 26801  - 06/19/2025, 5:42:29 PM     LOG [NestFactory] Starting Nest application...
+[payment-processing] ERROR: [Nest] 26801  - 06/19/2025, 5:42:29 PM   ERROR [ExceptionHandler] UnknownDependenciesException [Error]: Nest can't resolve dependencies of the HDFCSmartGatewayService (?, String, String, Boolean). Please make sure that the argument String at index [0] is available in the AppModule context.
+
+Potential solutions:
+- Is AppModule a valid NestJS module?
+- If String is a provider, is it part of the current AppModule?
+- If String is exported from a separate @Module, is that module imported within AppModule?
+  @Module({
+    imports: [ /* the Module containing String */ ]
+  })
+
+    at Injector.lookupComponentInParentModules (/home/runner/workspace/node_modules/@nestjs/core/injector/injector.js:262:19)
+    at async Injector.resolveComponentInstance (/home/runner/workspace/node_modules/@nestjs/core/injector/injector.js:215:33)
+    at async resolveParam (/home/runner/workspace/node_modules/@nestjs/core/injector/injector.js:129:38)
+    at async Promise.all (index 0)
+    at async Injector.resolveConstructorParams (/home/runner/workspace/node_modules/@nestjs/core/injector/injector.js:144:27)
+    at async Injector.loadInstance (/home/runner/workspace/node_modules/@nestjs/core/injector/injector.js:70:13)
+    at async Injector.loadProvider (/home/runner/workspace/node_modules/@nestjs/core/injector/injector.js:98:9)
+    at async /home/runner/workspace/node_modules/@nestjs/core/injector/instance-loader.js:56:13
+    at async Promise.all (index 5)
+    at async InstanceLoader.createInstancesOfProviders (/home/runner/workspace/node_modules/@nestjs/core/injector/instance-loader.js:55:9) {
+  type: 'HDFCSmartGatewayService',
+  context: {
+    index: 0,
+    dependencies: [
+      [Function: String],
+      [Function: String],
+      [Function: String],
+      [Function: Boolean]
+    ],
+    name: [Function: String]
+  },
+  metadata: {
+    id: 'ed8558f20f3b8ac50be7d'
+  },
+  moduleRef: {
+    id: '0de84ade78cc0d24b8f1a'
+  }
+}
+[payment-processing] Process exited with code 1

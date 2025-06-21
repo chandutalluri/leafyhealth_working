@@ -1,0 +1,66 @@
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+authStore.ts:52 Attempting login to: /api/auth/internal/login
+authStore.ts:53 Request payload: Object
+authStore.ts:65 Response status: 200 OK
+authStore.ts:66 Response headers: Object
+leafyhealthlogo_copy_25991930-2a1c-4593-95db-1965eea84310.png:1 
+            
+            
+           Failed to load resource: the server responded with a status of 404 (Not Found)Understand this error
+client.js:82 TypeError: __webpack_require__.t is not a function
+    at eval (index.mjs:11:161)
+    at (node_modules/@radix-ui/react-id/dist/index.mjs (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/static/chunks/pages/system-dashboard.js:227:1)
+    at options.factory (webpack.js:661:31)
+    at __webpack_require__ (webpack.js:37:33)
+    at fn (webpack.js:318:21)
+    at eval (index.mjs:26:76)
+    at (node_modules/@radix-ui/react-dialog/dist/index.mjs (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/static/chunks/pages/system-dashboard.js:183:1)
+    at options.factory (webpack.js:661:31)
+    at __webpack_require__ (webpack.js:37:33)
+    at fn (webpack.js:318:21)
+    at eval (dialog.tsx:18:80)
+    at (pages-dir-browser)/src/components/ui/dialog.tsx (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/static/chunks/pages/system-dashboard.js:1061:1)
+    at options.factory (webpack.js:661:31)
+    at __webpack_require__ (webpack.js:37:33)
+    at fn (webpack.js:318:21)
+    at eval (CompanyManagement.tsx:15:68)
+    at (pages-dir-browser)/src/components/microservices/CompanyManagement.tsx (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/static/chunks/pages/system-dashboard.js:995:1)
+    at options.factory (webpack.js:661:31)
+    at __webpack_require__ (webpack.js:37:33)
+    at fn (webpack.js:318:21)
+    at eval (system-dashboard.tsx:13:101)
+    at (pages-dir-browser)/src/pages/system-dashboard.tsx (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/static/chunks/pages/system-dashboard.js:1138:1)
+    at options.factory (webpack.js:661:31)
+    at __webpack_require__ (webpack.js:37:33)
+    at fn (webpack.js:318:21)
+    at eval (next-client-pages-loader.js?absolutePagePath=%2Fhome%2Frunner%2Fworkspace%2Ffrontend%2Fapps%2Fsuper-admin%2Fsrc%2Fpages%2Fsystem-dashboard.tsx&page=%2Fsystem-dashboard!:5:16)
+    at eval (route-loader.js:238:51)
+nextJsHandleConsoleError @ client.js:82Understand this error
+index.mjs:11 Uncaught (in promise) TypeError: __webpack_require__.t is not a function
+    at eval (index.mjs:11:161)
+    at (node_modules/@radix-ui/react-id/dist/index.mjs (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/static/chunks/pages/system-dashboard.js:227:1)
+    at options.factory (webpack.js:661:31)
+    at __webpack_require__ (webpack.js:37:33)
+    at fn (webpack.js:318:21)
+    at eval (index.mjs:26:76)
+    at (node_modules/@radix-ui/react-dialog/dist/index.mjs (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/static/chunks/pages/system-dashboard.js:183:1)
+    at options.factory (webpack.js:661:31)
+    at __webpack_require__ (webpack.js:37:33)
+    at fn (webpack.js:318:21)
+    at eval (dialog.tsx:18:80)
+    at (pages-dir-browser)/src/components/ui/dialog.tsx (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/static/chunks/pages/system-dashboard.js:1061:1)
+    at options.factory (webpack.js:661:31)
+    at __webpack_require__ (webpack.js:37:33)
+    at fn (webpack.js:318:21)
+    at eval (CompanyManagement.tsx:15:68)
+    at (pages-dir-browser)/src/components/microservices/CompanyManagement.tsx (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/static/chunks/pages/system-dashboard.js:995:1)
+    at options.factory (webpack.js:661:31)
+    at __webpack_require__ (webpack.js:37:33)
+    at fn (webpack.js:318:21)
+    at eval (system-dashboard.tsx:13:101)
+    at (pages-dir-browser)/src/pages/system-dashboard.tsx (https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/static/chunks/pages/system-dashboard.js:1138:1)
+    at options.factory (webpack.js:661:31)
+    at __webpack_require__ (webpack.js:37:33)
+    at fn (webpack.js:318:21)
+    at eval (next-client-pages-loader.js?absolutePagePath=%2Fhome%2Frunner%2Fworkspace%2Ffrontend%2Fapps%2Fsuper-admin%2Fsrc%2Fpages%2Fsystem-dashboard.tsx&page=%2Fsystem-dashboard!:5:16)
+    at eval (route-loader.js:238:51)Understand this error

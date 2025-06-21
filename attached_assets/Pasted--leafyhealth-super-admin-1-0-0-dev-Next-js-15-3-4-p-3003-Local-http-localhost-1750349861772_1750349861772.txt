@@ -1,0 +1,210 @@
+ @leafyhealth/super-admin@1.0.0 dev
+   ▲ Next.js 15.3.4-p 3003
+   - Local:        http://localhost:3003
+   - Network:      http://172.31.128.11:3003
+   - Experiments (use with caution):
+     ✓ externalDir
+
+ ✓ Starting...
+ ✓ Ready in 2.4s
+ ○ Compiling / ...
+ ✓ Compiled / in 5.3s (541 modules)
+ ✓ Compiled in 318ms (541 modules)
+ GET / 200 in 6041ms
+ ⚠ Cross origin request detected from 596134ae-2368-4b16-bd88-c5ed3a677441-00-sup9fyy6rfx0.pike.replit.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ✓ Compiled /api/microservices-status in 447ms (179 modules)
+ GET /api/microservices-status 304 in 581ms
+ ○ Compiling /company-management ...
+ ✓ Compiled /company-management in 538ms (561 modules)
+ GET / 200 in 314ms
+ ✓ Compiled /api/microservices-status in 68ms (189 modules)
+ GET /api/microservices-status 200 in 124ms
+ ✓ Compiled /image-management in 436ms (616 modules)
+ ○ Compiling /security ...
+ ✓ Compiled /security in 580ms (636 modules)
+ ✓ Compiled /api/branches in 110ms (223 modules)
+Database error: error: column "latitude" does not exist
+    at async handler (src/pages/api/branches.ts:14:21)
+  12 |       
+  13 |       // Get all active branches for multi-branch company
+> 14 |       const result = await client.query(`
+     |                     ^
+  15 |         SELECT 
+  16 |           id,
+  17 |           name, {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '77',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/branches 304 in 3901ms
+ ✓ Compiled /api/identity-access in 77ms (225 modules)
+Database error: error: column "assigned_app" does not exist
+    at async handler (src/pages/api/identity-access.ts:41:26)
+  39 |     if (req.method === 'GET') {
+  40 |       // Get INTERNAL users only - exclude customers from admin interface
+> 41 |       const usersResult = await client.query(`
+     |                          ^
+  42 |         SELECT 
+  43 |           id, username, email, role, status, assigned_app as "assignedApp",
+  44 |           last_login as "lastLogin", created_at as "createdAt", updated_at as "updatedAt" {
+  length: 112,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '63',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/identity-access 500 in 1795ms
+ ✓ Compiled /api/user-role-management in 69ms (227 modules)
+Database error: error: column r.updated_at does not exist
+    at async handler (src/pages/api/user-role-management.ts:32:26)
+  30 |     if (req.method === 'GET') {
+  31 |       // Get all roles with user counts
+> 32 |       const rolesResult = await client.query(`
+     |                          ^
+  33 |         SELECT 
+  34 |           r.id, r.name, r.description, r.permissions,
+  35 |           r.created_at as "createdAt", r.updated_at as "updatedAt", {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "u.updated_at".',
+  position: '111',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+ GET /api/user-role-management 500 in 1765ms
+ ✓ Compiled /user-add in 194ms (654 modules)
+Database error: error: column "latitude" does not exist
+    at async handler (src/pages/api/branches.ts:14:21)
+  12 |       
+  13 |       // Get all active branches for multi-branch company
+> 14 |       const result = await client.query(`
+     |                     ^
+  15 |         SELECT 
+  16 |           id,
+  17 |           name, {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '77',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/branches 304 in 1745ms
+ ✓ Compiled /accessibility in 153ms (660 modules)
+Database error: error: column "assigned_app" does not exist
+    at async handler (src/pages/api/identity-access.ts:41:26)
+  39 |     if (req.method === 'GET') {
+  40 |       // Get INTERNAL users only - exclude customers from admin interface
+> 41 |       const usersResult = await client.query(`
+     |                          ^
+  42 |         SELECT 
+  43 |           id, username, email, role, status, assigned_app as "assignedApp",
+  44 |           last_login as "lastLogin", created_at as "createdAt", updated_at as "updatedAt" {
+  length: 112,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '63',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3722',
+  routine: 'errorMissingColumn'
+}
+ GET /api/identity-access 500 in 1768ms
+Database error: error: column r.updated_at does not exist
+    at async handler (src/pages/api/user-role-management.ts:32:26)
+  30 |     if (req.method === 'GET') {
+  31 |       // Get all roles with user counts
+> 32 |       const rolesResult = await client.query(`
+     |                          ^
+  33 |         SELECT 
+  34 |           r.id, r.name, r.description, r.permissions,
+  35 |           r.created_at as "createdAt", r.updated_at as "updatedAt", {
+  length: 170,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "u.updated_at".',
+  position: '111',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3729',
+  routine: 'errorMissingColumn'
+}
+ GET /api/user-role-management 500 in 1674ms
+ ✓ Compiled /catalog-management in 208ms (664 modules)
+ ✓ Compiled /inventory-management in 174ms (668 modules)
+ GET /inventory-management 200 in 295ms
+ ✓ Compiled /order-management in 168ms (600 modules)
+ ✓ Compiled /reporting-management in 182ms (557 modules)
+ ✓ Compiled /content-management in 135ms (561 modules)
+ ✓ Compiled /notification-service in 122ms (565 modules)
+ ✓ Compiled /multi-language-management in 117ms (569 modules)
+ ✓ Compiled /api/multi-language-management in 141ms (193 modules)
+ GET /api/multi-language-management 200 in 168ms
+ ✓ Compiled /analytics-reporting in 182ms (577 modules)
+ ✓ Compiled /label-design in 169ms (581 modules)

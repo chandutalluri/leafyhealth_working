@@ -1,0 +1,221 @@
+
+      /////////////////////
+   ///////////////////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////        Curious and driven?
+  ///////////////@@@@@@@///////        Work with us!
+  ///////////////@@@@@@@///////
+  ///////////////@@@@@@@///////        https://join.replit.com/hack.with.us
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@#//////////////
+   ///////////////////////////
+      /////////////////////
+      
+_app-6b0089c83b1309ba.js:38 [LaunchDarkly] LaunchDarkly client initialized
+_app-6b0089c83b1309ba.js:38 WARN: A component changed from uncontrolled to controlled.
+(anonymous) @ _app-6b0089c83b1309ba.js:38Understand this warning
+_app-6b0089c83b1309ba.js:38 WARN: A component changed from controlled to uncontrolled.
+(anonymous) @ _app-6b0089c83b1309ba.js:38Understand this warning
+_app-6b0089c83b1309ba.js:38 WARN: A component changed from uncontrolled to controlled.
+(anonymous) @ _app-6b0089c83b1309ba.js:38Understand this warning
+_app-6b0089c83b1309ba.js:38 Uncaught RangeError: Invalid change range 0 to 7 (in doc of length 6)
+    at t (4357-e273676b706b93d5.js:1:77387)
+    at I.of (4357-e273676b706b93d5.js:1:77599)
+    at tm.changes (4357-e273676b706b93d5.js:1:95294)
+    at 275e5802-8716855e474ed2eb.js:1:59878
+    at h (275e5802-8716855e474ed2eb.js:1:60941)
+    at eg (275e5802-8716855e474ed2eb.js:1:61017)
+    at handlers.textupdate (275e5802-8716855e474ed2eb.js:1:118562)
+    at EditContext.n (_app-6b0089c83b1309ba.js:38:2959)Understand this error
+1156[Report Only] Refused to connect to '<URL>' because it violates the following Content Security Policy directive: "connect-src 'none'".
+
+39Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.Understand this error
+8Unrecognized feature: 'ambient-light-sensor'.Understand this warning
+8Unrecognized feature: 'battery'.Understand this warning
+8Unrecognized feature: 'execution-while-not-rendered'.Understand this warning
+8Unrecognized feature: 'execution-while-out-of-viewport'.Understand this warning
+8Unrecognized feature: 'layout-animations'.Understand this warning
+8Unrecognized feature: 'legacy-image-formats'.Understand this warning
+8Unrecognized feature: 'navigation-override'.Understand this warning
+8Unrecognized feature: 'oversized-images'.Understand this warning
+8Unrecognized feature: 'publickey-credentials'.Understand this warning
+8Unrecognized feature: 'speaker-selection'.Understand this warning
+8Unrecognized feature: 'unoptimized-images'.Understand this warning
+8Unrecognized feature: 'unsized-media'.Understand this warning
+leafyforworkingwork:1 Unrecognized feature: 'pointer-lock'.Understand this warning
+8Allow attribute will take precedence over 'allowfullscreen'.Understand this warning
+8Allow attribute will take precedence over 'allowpaymentrequest'.Understand this warning
+leafyforworkingwork:1 Access to fetch at 'https://sp.replit.com/v1/m' from origin 'https://replit.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this error
+sp.replit.com/v1/m:1 
+            
+            
+           Failed to load resource: net::ERR_FAILEDUnderstand this error
+_app-6b0089c83b1309ba.js:38 Error sending segment performance metrics TypeError: Failed to fetch
+    at _app-6b0089c83b1309ba.js:38:9046
+    at o (sdk.min.js:1:23763)
+    at t.<anonymous> (remote-metrics.ts:138:12)
+    at tslib.es6.js:103:23
+    at Object.next (tslib.es6.js:108:37)
+    at tslib.es6.js:80:8
+    at new Promise (<anonymous>)
+    at u (tslib.es6.js:72:27)
+    at i.148.t.send (sdk.min.js:1:22021)
+    at t.<anonymous> (remote-metrics.ts:125:16)
+    at tslib.es6.js:103:23
+    at Object.next (tslib.es6.js:108:37)
+    at tslib.es6.js:80:8
+    at new Promise (<anonymous>)
+    at u (tslib.es6.js:72:27)
+    at t.flush (sdk.min.js:1:21754)
+    at l (remote-metrics.ts:83:14)
+    at n (_app-6b0089c83b1309ba.js:38:2959)
+(anonymous) @ _app-6b0089c83b1309ba.js:38Understand this error
+5Refused to load the script '<URL>' because it violates the following Content Security Policy directive: "script-src 'self' 'unsafe-eval' 'unsafe-inline' *.replit.dev *.replit.app". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ eruda.js:2Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ eruda.js:2Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ eruda.js:2Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ eruda.js:2Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ eruda.js:2Understand this error
+3761 log entries are not shown.Understand this warning
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+workspace_iframe.html:151 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/ 502 (Bad Gateway)
+(anonymous) @ workspace_iframe.html?initialPath=%2F&id=%3Ar7vv%3A:151Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85
+connectHMR @ websocket.js:91
+pageBootstrap @ page-bootstrap.js:25
+eval @ next-dev.js:24Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85
+connectHMR @ websocket.js:91
+pageBootstrap @ page-bootstrap.js:25
+eval @ next-dev.js:24Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+eruda.js:2 Attempting login to: /api/auth/internal/login
+eruda.js:2 Request payload: {email: 'global.admin@leafyhealth.com', password: '***'}
+eruda.js:2 Response status: 200 OK
+eruda.js:2 Response headers: {access-control-allow-credentials: 'true', access-control-allow-headers: 'Content-Type, Authorization, X-Requested-With, Accept', access-control-allow-methods: 'GET, POST, PUT, DELETE, PATCH, OPTIONS', access-control-allow-origin: 'https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000', access-control-max-age: '86400', …}
+eruda.js:2 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/api/direct-data/system-metrics 404 (Not Found)
+window.fetch @ Network.js:219
+fetchMicroserviceStatus @ system-dashboard.tsx:110
+SystemDashboard.useEffect @ system-dashboard.tsx:103
+commitHookEffectListMount @ react-dom.development.js:23145
+commitPassiveMountOnFiber @ react-dom.development.js:24921
+commitPassiveMountEffects_complete @ react-dom.development.js:24886
+commitPassiveMountEffects_begin @ react-dom.development.js:24873
+commitPassiveMountEffects @ react-dom.development.js:24861
+flushPassiveEffectsImpl @ react-dom.development.js:27034
+flushPassiveEffects @ react-dom.development.js:26979
+eval @ react-dom.development.js:26764
+workLoop @ scheduler.development.js:266
+flushWork @ scheduler.development.js:239
+performWorkUntilDeadline @ scheduler.development.js:533Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+eruda.js:2 Attempting login to: /api/auth/internal/login
+eruda.js:2 Request payload: {email: 'ops.admin@leafyhealth.com', password: '***'}
+eruda.js:2 Response status: 200 OK
+eruda.js:2 Response headers: {access-control-allow-credentials: 'true', access-control-allow-headers: 'Content-Type, Authorization, X-Requested-With, Accept', access-control-allow-methods: 'GET, POST, PUT, DELETE, PATCH, OPTIONS', access-control-allow-origin: 'https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000', access-control-max-age: '86400', …}
+eruda.js:2 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/api/direct-data/products 404 (Not Found)
+window.fetch @ Network.js:219
+fetchProductData @ ProductEcosystemHub.tsx:49
+ProductEcosystemHub.useEffect @ ProductEcosystemHub.tsx:41
+commitHookEffectListMount @ react-dom.development.js:23145
+commitPassiveMountOnFiber @ react-dom.development.js:24921
+commitPassiveMountEffects_complete @ react-dom.development.js:24886
+commitPassiveMountEffects_begin @ react-dom.development.js:24873
+commitPassiveMountEffects @ react-dom.development.js:24861
+flushPassiveEffectsImpl @ react-dom.development.js:27034
+flushPassiveEffects @ react-dom.development.js:26979
+eval @ react-dom.development.js:26764
+workLoop @ scheduler.development.js:266
+flushWork @ scheduler.development.js:239
+performWorkUntilDeadline @ scheduler.development.js:533Understand this error
+eruda.js:2 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/api/direct-data/inventory/alerts 404 (Not Found)
+window.fetch @ Network.js:219
+fetchProductData @ ProductEcosystemHub.tsx:56
+await in fetchProductData
+ProductEcosystemHub.useEffect @ ProductEcosystemHub.tsx:41
+commitHookEffectListMount @ react-dom.development.js:23145
+commitPassiveMountOnFiber @ react-dom.development.js:24921
+commitPassiveMountEffects_complete @ react-dom.development.js:24886
+commitPassiveMountEffects_begin @ react-dom.development.js:24873
+commitPassiveMountEffects @ react-dom.development.js:24861
+flushPassiveEffectsImpl @ react-dom.development.js:27034
+flushPassiveEffects @ react-dom.development.js:26979
+eval @ react-dom.development.js:26764
+workLoop @ scheduler.development.js:266
+flushWork @ scheduler.development.js:239
+performWorkUntilDeadline @ scheduler.development.js:533Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+eruda.js:2 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+t @ Network.js:227
+init @ websocket.js:85Understand this error
+workspace_iframe.html?initialPath=%2F&id=%3Ar88o%3A:151 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/ 502 (Bad Gateway)
+(anonymous) @ workspace_iframe.html?initialPath=%2F&id=%3Ar88o%3A:151Understand this error
+(index):108 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/ 502 (Bad Gateway)
+(anonymous) @ (index):108Understand this error

@@ -1,0 +1,30 @@
+{
+  "name": "@leafyhealth/inventory-management",
+  "version": "1.0.0",
+  "description": "LeafyHealth Inventory Management Service",
+  "main": "dist/src/main.js",
+  "scripts": {
+    "build": "nest build",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/src/main"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/swagger": "^7.0.0",
+    "@neondatabase/serverless": "*",
+    "class-validator": "*",
+    "class-transformer": "*",
+    "drizzle-orm": "*",
+    "reflect-metadata": "*",
+    "ws": "*"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "*",
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}

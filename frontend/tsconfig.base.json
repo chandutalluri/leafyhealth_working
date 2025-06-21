@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "ES2020"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@leafyhealth/ui-kit": ["./packages/ui-kit/src"],
+      "@leafyhealth/ui-kit/*": ["./packages/ui-kit/src/*"],
+      "@leafyhealth/api-client": ["./packages/api-client/src"],
+      "@leafyhealth/api-client/*": ["./packages/api-client/src/*"],
+      "@leafyhealth/auth": ["./packages/auth/src"],
+      "@leafyhealth/auth/*": ["./packages/auth/src/*"],
+      "@leafyhealth/config": ["./packages/config/src"],
+      "@leafyhealth/config/*": ["./packages/config/src/*"],
+      "@leafyhealth/utils": ["./packages/utils/src"],
+      "@leafyhealth/utils/*": ["./packages/utils/src/*"],
+      "@leafyhealth/form-schema": ["./packages/form-schema/src"],
+      "@leafyhealth/form-schema/*": ["./packages/form-schema/src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", "dist", "build"]
+}

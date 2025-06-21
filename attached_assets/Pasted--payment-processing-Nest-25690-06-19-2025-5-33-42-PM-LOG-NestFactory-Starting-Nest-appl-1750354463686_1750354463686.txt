@@ -1,0 +1,63 @@
+[payment-processing] [Nest] 25690  - 06/19/2025, 5:33:42 PM     LOG [NestFactory] Starting Nest application...
+[payment-processing] ERROR: [Nest] 25690  - 06/19/2025, 5:33:42 PM   ERROR [ExceptionHandler] UnknownDependenciesException [Error]: Nest can't resolve dependencies of the HDFCSmartGatewayService (?, String, String, Boolean). Please make sure that the argument String at index [0] is available in the AppModule context.
+
+Potential solutions:
+- Is AppModule a valid NestJS module?
+- If String is a provider, is it part of the current AppModule?
+- If String is exported from a separate @Module, is that module imported within AppModule?
+  @Module({
+    imports: [ /* the Module containing String */ ]
+  })
+
+    at Injector.lookupComponentInParentModules (/home/runner/workspace/node_modules/@nestjs/core/injector/injector.js:262:19)
+    at async Injector.resolveComponentInstance (/home/runner/workspace/node_modules/@nestjs/core/injector/injector.js:215:33)
+    at async resolveParam (/home/runner/workspace/node_modules/@nestjs/core/injector/injector.js:129:38)
+    at async Promise.all (index 0)
+    at async Injector.resolveConstructorParams (/home/runner/workspace/node_modules/@nestjs/core/injector/injector.js:144:27)
+    at async Injector.loadInstance (/home/runner/workspace/node_modules/@nestjs/core/injector/injector.js:70:13)
+    at async Injector.loadProvider (/home/runner/workspace/node_modules/@nestjs/core/injector/injector.js:98:9)
+    at async /home/runner/workspace/node_modules/@nestjs/core/injector/instance-loader.js:56:13
+    at async Promise.all (index 5)
+    at async InstanceLoader.createInstancesOfProviders (/home/runner/workspace/node_modules/@nestjs/core/injector/instance-loader.js:55:9) {
+  type: 'HDFCSmartGatewayService',
+  context: {
+    index: 0,
+    dependencies: [
+      [Function: String],
+      [Function: String],
+      [Function: String],
+      [Function: Boolean]
+    ],
+    name: [Function: String]
+  },
+  metadata: {
+    id: '0ccbad5a9bfbcfaf275a2'
+  },
+  moduleRef: {
+    id: 'd9ce3fd78531b7d23e731'
+  }
+}
+[payment-processing] Process exited with code 1
+🚀 Starting performance-monitor on port 3032...
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [NestFactory] Starting Nest application...
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [InstanceLoader] DatabaseModule dependencies initialized +11ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [InstanceLoader] PassportModule dependencies initialized +0ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +1ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [InstanceLoader] AuthModule dependencies initialized +1ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [InstanceLoader] JwtModule dependencies initialized +0ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [RoutesResolver] PerformanceMonitorController {/performance-monitor}: +17ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [RouterExplorer] Mapped {/performance-monitor/health, GET} route +2ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [RouterExplorer] Mapped {/performance-monitor/metrics, POST} route +1ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [RouterExplorer] Mapped {/performance-monitor/metrics, GET} route +0ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [RouterExplorer] Mapped {/performance-monitor/metrics/:id, GET} route +1ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [RouterExplorer] Mapped {/performance-monitor/metrics/:id, PUT} route +0ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [RouterExplorer] Mapped {/performance-monitor/metrics/:id, DELETE} route +0ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [RouterExplorer] Mapped {/performance-monitor/metrics/service/:serviceName, GET} route +1ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [RouterExplorer] Mapped {/performance-monitor/dashboard/overview, GET} route +0ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [RouterExplorer] Mapped {/performance-monitor/alerts, POST} route +1ms
+[performance-monitor] [Nest] 25697  - 06/19/2025, 5:33:43 PM     LOG [NestApplication] Nest application successfully started +1ms
+[performance-monitor] 🚀 Performance Monitor Service running on port 3032
+[performance-monitor] 📚 API Documentation: http://localhost:3032/api/docs

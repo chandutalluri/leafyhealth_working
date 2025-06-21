@@ -1,0 +1,154 @@
+Refused to load the script 'https://checkout.razorpay.com/v1/checkout.js' because it violates the following Content Security Policy directive: "script-src 'self' 'unsafe-eval' 'unsafe-inline'". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback.
+Understand this error
+customer:1 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/static/media/e4af272ccee01ff0-s.p.woff2 net::ERR_ABORTED 404 (Not Found)Understand this error
+main.js:2587 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+manifest.json:1 
+            
+            
+           GET https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/manifest.json 404 (Not Found)Understand this error
+customer:1 Manifest fetch from https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/manifest.json failed, code 404Understand this error
+client.js:82 Warning: Did not expect server HTML to contain a <div> in <div>.
+    at div
+    at div
+    at ClientOnly (webpack-internal:///(pages-dir-browser)/./src/components/ClientOnly.tsx:13:11)
+    at SecurityWrapper (webpack-internal:///(pages-dir-browser)/./src/components/SecurityWrapper.tsx:23:11)
+    at ToastProvider (webpack-internal:///(pages-dir-browser)/./src/providers/ToastProvider.tsx:9:11)
+    at AuthProvider (webpack-internal:///(pages-dir-browser)/./src/providers/AuthProvider.tsx:15:11)
+    at QueryClientProvider (webpack-internal:///(pages-dir-browser)/../../../node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js:28:3)
+    at QueryProvider (webpack-internal:///(pages-dir-browser)/./src/providers/QueryProvider.tsx:17:11)
+    at GatewayEnforcer (webpack-internal:///(pages-dir-browser)/./src/pages/_app.tsx:33:11)
+    at App (webpack-internal:///(pages-dir-browser)/./src/pages/_app.tsx:161:11)
+    at PathnameContextProviderAdapter (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/shared/lib/router/adapters.js:81:11)
+    at PagesDevOverlayErrorBoundary (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/components/react-dev-overlay/pages/pages-dev-overlay-error-boundary.js:32:9)
+    at PagesDevOverlay (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/components/react-dev-overlay/pages/pages-dev-overlay.js:18:11)
+    at Container (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/index.js:80:1)
+    at AppContainer (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/index.js:188:11)
+    at Root (webpack-internal:///(pages-dir-browser)/../../../node_modules/next/dist/client/index.js:417:11)
+nextJsHandleConsoleError @ client.js:82
+printWarning @ react-dom.development.js:86
+error @ react-dom.development.js:60
+warnForDeletedHydratableElement @ react-dom.development.js:10477
+didNotHydrateInstance @ react-dom.development.js:11424
+warnUnhydratedInstance @ react-dom.development.js:12313
+warnIfUnhydratedTailNodes @ react-dom.development.js:12707
+popHydrationState @ react-dom.development.js:12677
+completeWork @ react-dom.development.js:22171
+completeUnitOfWork @ react-dom.development.js:26591
+performUnitOfWork @ react-dom.development.js:26563
+workLoopSync @ react-dom.development.js:26461
+renderRootSync @ react-dom.development.js:26429
+performConcurrentWorkOnRoot @ react-dom.development.js:25733
+workLoop @ scheduler.development.js:266
+flushWork @ scheduler.development.js:239
+performWorkUntilDeadline @ scheduler.development.js:533Understand this error
+client.js:82 Warning: An error occurred during hydration. The server HTML was replaced with client content in <div>.
+nextJsHandleConsoleError @ client.js:82
+printWarning @ react-dom.development.js:86
+error @ react-dom.development.js:60
+errorHydratingContainer @ react-dom.development.js:11473
+recoverFromConcurrentError @ react-dom.development.js:25841
+performConcurrentWorkOnRoot @ react-dom.development.js:25745
+workLoop @ scheduler.development.js:266
+flushWork @ scheduler.development.js:239
+performWorkUntilDeadline @ scheduler.development.js:533Understand this error
+2on-recoverable-error.js:28 Uncaught Error: Hydration failed because the initial UI does not match what was rendered on the server.
+    at throwOnHydrationMismatch (react-dom.development.js:12507:9)
+    at popHydrationState (react-dom.development.js:12678:9)
+    at completeWork (react-dom.development.js:22171:30)
+    at completeUnitOfWork (react-dom.development.js:26591:16)
+    at performUnitOfWork (react-dom.development.js:26563:5)
+    at workLoopSync (react-dom.development.js:26461:5)
+    at renderRootSync (react-dom.development.js:26429:7)
+    at performConcurrentWorkOnRoot (react-dom.development.js:25733:74)
+    at workLoop (scheduler.development.js:266:34)
+    at flushWork (scheduler.development.js:239:14)
+    at MessagePort.performWorkUntilDeadline (scheduler.development.js:533:21)
+getReactStitchedError @ stitched-error.js:26
+onRecoverableError @ on-recoverable-error.js:20
+commitRootImpl @ react-dom.development.js:26907
+commitRoot @ react-dom.development.js:26677
+finishConcurrentRender @ react-dom.development.js:25976
+performConcurrentWorkOnRoot @ react-dom.development.js:25804
+workLoop @ scheduler.development.js:266
+flushWork @ scheduler.development.js:239
+performWorkUntilDeadline @ scheduler.development.js:533Understand this error
+on-recoverable-error.js:28 Uncaught Error: There was an error while hydrating. Because the error happened outside of a Suspense boundary, the entire root will switch to client rendering.
+    at updateHostRoot (react-dom.development.js:19844:57)
+    at beginWork (react-dom.development.js:21610:14)
+    at beginWork$1 (react-dom.development.js:27421:14)
+    at performUnitOfWork (react-dom.development.js:26552:12)
+    at workLoopSync (react-dom.development.js:26461:5)
+    at renderRootSync (react-dom.development.js:26429:7)
+    at recoverFromConcurrentError (react-dom.development.js:25845:20)
+    at performConcurrentWorkOnRoot (react-dom.development.js:25745:22)
+    at workLoop (scheduler.development.js:266:34)
+    at flushWork (scheduler.development.js:239:14)
+    at MessagePort.performWorkUntilDeadline (scheduler.development.js:533:21)
+getReactStitchedError @ stitched-error.js:26
+onRecoverableError @ on-recoverable-error.js:20
+commitRootImpl @ react-dom.development.js:26907
+commitRoot @ react-dom.development.js:26677
+finishConcurrentRender @ react-dom.development.js:25976
+performConcurrentWorkOnRoot @ react-dom.development.js:25804
+workLoop @ scheduler.development.js:266
+flushWork @ scheduler.development.js:239
+performWorkUntilDeadline @ scheduler.development.js:533Understand this error
+stack-frame.js:78 
+            
+            
+           POST https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__nextjs_original-stack-frames 404 (Not Found)
+getOriginalStackFrames @ stack-frame.js:78
+getErrorByType @ get-error-by-type.js:74
+eval @ render-error.js:78
+commitHookEffectListMount @ react-dom.development.js:23145
+commitPassiveMountOnFiber @ react-dom.development.js:24921
+commitPassiveMountEffects_complete @ react-dom.development.js:24886
+commitPassiveMountEffects_begin @ react-dom.development.js:24873
+commitPassiveMountEffects @ react-dom.development.js:24861
+flushPassiveEffectsImpl @ react-dom.development.js:27034
+flushPassiveEffects @ react-dom.development.js:26979
+eval @ react-dom.development.js:26764
+workLoop @ scheduler.development.js:266
+flushWork @ scheduler.development.js:239
+performWorkUntilDeadline @ scheduler.development.js:533Understand this error
+stack-frame.js:78 
+            
+            
+           POST https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/__nextjs_original-stack-frames 404 (Not Found)
+getOriginalStackFrames @ stack-frame.js:78
+getErrorByType @ get-error-by-type.js:74
+eval @ render-error.js:78
+commitHookEffectListMount @ react-dom.development.js:23145
+commitPassiveMountOnFiber @ react-dom.development.js:24921
+commitPassiveMountEffects_complete @ react-dom.development.js:24886
+commitPassiveMountEffects_begin @ react-dom.development.js:24873
+commitPassiveMountEffects @ react-dom.development.js:24861
+flushPassiveEffectsImpl @ react-dom.development.js:27034
+flushPassiveEffects @ react-dom.development.js:26979
+performSyncWorkOnRoot @ react-dom.development.js:26071
+flushSyncCallbacks @ react-dom.development.js:12042
+commitRootImpl @ react-dom.development.js:26954
+commitRoot @ react-dom.development.js:26677
+finishConcurrentRender @ react-dom.development.js:25976
+performConcurrentWorkOnRoot @ react-dom.development.js:25804
+workLoop @ scheduler.development.js:266
+flushWork @ scheduler.development.js:239
+performWorkUntilDeadline @ scheduler.development.js:533Understand this error
+login:1 The resource https://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/static/media/e4af272ccee01ff0-s.p.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.Understand this warning
+websocket.js:85 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+init @ websocket.js:85
+connectHMR @ websocket.js:91
+pageBootstrap @ page-bootstrap.js:25
+eval @ next-dev.js:24Understand this error
+websocket.js:85 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+init @ websocket.js:85Understand this error
+websocket.js:85 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+init @ websocket.js:85Understand this error
+websocket.js:85 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+init @ websocket.js:85Understand this error
+websocket.js:85 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 
+init @ websocket.js:85Understand this error
+websocket.js:85 WebSocket connection to 'wss://61915ea0-a177-4649-b04c-5bf5513c2ae7-00-25z6jk7p0vm4h.riker.replit.dev:5000/_next/webpack-hmr' failed: 

@@ -1,0 +1,52 @@
+### ⚠️ URGENT NETWORKING FAILURE: UNIFIED GATEWAY NOT WORKING
+
+We have implemented a unified gateway networking architecture as documented in our internal file `UNIFIED_NETWORKING_ARCHITECTURE.md`. The following constraints and configs were previously working:
+
+- All frontend and backend services are internally routed.
+- External port exposed: `5000` (Unified Gateway)
+- All other frontend ports (3000-3004) and backend ports (3013–3036, 8081, 8085) are internal.
+- API routes follow: `https://your-domain:5000/api/[service]/[endpoint]`
+- Admin portals via subpaths (e.g., `/login`, `/system-dashboard`, `/operational-dashboard`)
+
+---
+
+### ❗Current Symptoms
+
+- Port 5000 is either **not binding**, **not accessible**, or **not resolving** properly.
+- Unified Gateway appears to **not reach backend services** anymore.
+- No frontend or API routes are resolving — even basic `/login` fails.
+- Preview URLs show **network timeout** or Replit's generic error page.
+
+---
+
+### ✅ Prior Stable Configuration (Before Failure)
+
+**Reference**: `PRODUCTION_READINESS_REVIEW.md`
+- Gateway served all frontend apps via sub-paths.
+- Traefik/NGINX-style routing was unified behind port 5000.
+- No direct frontend port exposure.
+- Backend health checks and routing worked across 26 services.
+
+---
+
+### 🔍 Request for Assistance
+
+Please help validate and/or restore:
+
+1. Is Replit still allowing external access to **port 5000**?
+2. Has **Replit networking changed** to block internal communication between services or containers?
+3. Is there any sandboxing/policy change that affects:
+   - Internal port discovery?
+   - Service-to-service communication?
+   - Outbound/inbound socket binding?
+4. Can you provide current firewall or container logs for `5000`, `8085`, `3013`, etc.?
+
+---
+
+### Suggested Recovery Steps
+
+- Revalidate that only port `5000` is exposed.
+- Confirm internal port routing via unified gateway file (`unified-gateway.js`).
+- Restart all containers manually from Replit Shell with logs enabled:
+  ```bash
+  pnpm start unified-gateway

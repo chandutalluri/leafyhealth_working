@@ -1,0 +1,76 @@
+version: '3.8'
+
+services:
+  traefik:
+    image: traefik:v3.0
+    command:
+      - "--api.dashboard=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--certificatesresolvers.letsencrypt.acme.httpchallenge=true"
+      - "--certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web"
+      - "--certificatesresolvers.letsencrypt.acme.email=admin@leafyhealth.com"
+      - "--certificatesresolvers.letsencrypt.acme.storage=/letsencrypt/acme.json"
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./letsencrypt:/letsencrypt
+    networks:
+      - traefik
+    restart: unless-stopped
+
+  leafyhealth:
+    build: .
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.leafyhealth.rule=Host(`your-domain.com`)"
+      - "traefik.http.routers.leafyhealth.entrypoints=websecure"
+      - "traefik.http.routers.leafyhealth.tls.certresolver=letsencrypt"
+      - "traefik.http.services.leafyhealth.loadbalancer.server.port=5000"
+      - "traefik.http.middlewares.leafyhealth-headers.headers.customrequestheaders.X-Forwarded-Proto=https"
+      - "traefik.http.routers.leafyhealth.middlewares=leafyhealth-headers"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - JWT_SECRET=${JWT_SECRET}
+      - SESSION_SECRET=${SESSION_SECRET}
+    networks:
+      - traefik
+      - leafyhealth-internal
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  leafyhealth-db:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_DB=leafyhealth
+      - POSTGRES_USER=${PGUSER}
+      - POSTGRES_PASSWORD=${PGPASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - leafyhealth-internal
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${PGUSER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  traefik:
+    external: true
+  leafyhealth-internal:
+    driver: bridge
+
+volumes:
+  postgres_data:
